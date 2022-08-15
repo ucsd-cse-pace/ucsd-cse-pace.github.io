@@ -225,3 +225,76 @@
 		font-size: 40px;
 	}
 }
+
+
+@media screen and (max-width: 720px) {
+	.directions img {
+		width: 100%;
+	}
+
+	.directions button {
+		font-family: 'Inter';
+		font-weight: 300;
+		font-size: 14px;
+
+		color: var(--uc-blue);
+		border: 1px solid var(--uc-gold);
+		background-color: white;;
+		border-radius: 10px;
+
+		margin-left: 1em;
+		margin-right: 1em;
+		padding: 10px;
+
+		cursor: pointer;
+	}
+
+	.directions .maps {
+		width: 100%;
+	}
+
+	.directions .map-links span {
+		font-size: 14px;
+	}
+
+	.directions .map-links {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+
+}
+
+@media screen and (min-width: 720px) {
+	.directions img {
+		width: 600px;
+		max-width: 100%;
+	}
+
+	.directions button {
+		font-family: 'Inter';
+		font-weight: 300;
+		font-size: 18px;
+
+		color: var(--uc-blue);
+		border: 3px solid var(--uc-gold);
+		background-color: white;;
+		border-radius: 10px;
+
+		margin-left: 1em;
+		margin-right: 1em;
+		padding: 10px;
+
+		cursor: pointer;
+	}
+
+	.directions .map-links span {
+		font-size: 18px;
+	}
+
+	.directions .map-links {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+}
