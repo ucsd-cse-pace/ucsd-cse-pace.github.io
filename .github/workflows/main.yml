@@ -1,10 +1,7 @@
-# This is a basic workflow to help you get started with Actions
+name: Deploy to pace.ucsd.edu
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # NOTE(joe): can uncomment these to always deploy on each push.
+  # NOTE(joe): can uncomment these to always deploy on each commit.
   # For now, need to go to the Actions tab and manually deploy
   # (Makes it easier to use github.io for testing)
   # push:
@@ -15,20 +12,15 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Copy to pace.ucsd.edu
         env:
           PACE_SSH_KEY: ${{ secrets.PACE_SSH_KEY }}
         run: |
