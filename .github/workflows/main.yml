@@ -27,4 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        env:
+          PACE_SSH_KEY: ${{ secrets.PACE_SSH_KEY }}
+        run: |
+          echo $PACE_SSH_KEY ~/id_rsa_pace
+          scp -i ~/id_rsa -r ./* pace@pace.ucsd.edu:~/htdocs/
