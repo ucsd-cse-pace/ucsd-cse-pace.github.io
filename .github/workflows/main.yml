@@ -23,7 +23,17 @@ jobs:
       - name: Copy to pace.ucsd.edu
         env:
           PACE_SSH_KEY: ${{ secrets.PACE_SSH_KEY }}
+          KNOWN_HOSTS: |
+            # pace.ucsd.edu:22 SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.7
+            pace.ucsd.edu ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIECgXIukY9c3ns59a5vmlWEXlgqdeOEfPdg5sGg4u6d
+            # pace.ucsd.edu:22 SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.7
+            pace.ucsd.edu ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDtPbzP0WBUGU6BVWgep8OCegfe7u6CjiQHK+KTDufRLN2eXDVtEv+dZLBbytVQikMgrZZIjpzfMZpJfMlUqZZhtY/QA6dAjbAiB3gvAeQLONT9yZM1dO/cH8RR/ty+HaYxWiG0alfk4dx4iWgC/92iHG3+PZ/4PN5sPwtow2gb6CoUIPTNqD1RDpQqPUfP2+X5rj9fydpVXiK5mZ7LWugy+axFXJR9QkggDXZHjuXPaSRsHWh4dElY+azwuzGYzLIwQTISLCd2rbZcVeWiIHfO89orGjD/MA4yYIBOjKJCxyExgV2sR+5ZfqOiR9xzfTS+T23Uz1yoUkhwsUlzV63h
+            # pace.ucsd.edu:22 SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.7
+            pace.ucsd.edu ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEB2HvBam4qDfGhl+PUISjPmpxalYAHeH7vZbWYm2jYQhPKmPScMcUe2IYdpAIeNo4MODfJ6u5uFBkkoUdYXF7s=
+            # pace.ucsd.edu:22 SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.7
+            # pace.ucsd.edu:22 SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.7
         run: |
           echo $PACE_SSH_KEY > ~/id_rsa_pace
+          echo $KNOWN_HOSTS > ~/known_hosts
           ls -l ~/
-          scp -vvv -i ~/id_rsa_pace -r ./* pace@pace.ucsd.edu:~/htdocs/
+          scp -vvv -o UserKnownHostsFile=~/known_hosts -i ~/id_rsa_pace -r ./* pace@pace.ucsd.edu:~/htdocs/
