@@ -27,3 +27,7 @@ around the breakpoints Bootstrap has defined for "small", "medium", "large" scre
 The script in `.github/workflows` is responsible for copying the files to pace.ucsd.edu when we trigger the action.
 It has a SSH key for the `pace` user stored as a [repository secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets), and uses `scp`
 to copy and overwrite all the files in the relevant target directory on that host.
+
+To deploy, use the Actions interface:
+
+<img width="1305" alt="image" src="https://user-images.githubusercontent.com/119891/184945789-bd2e4cd1-c5e6-425e-9cb9-63f65e88df32.png">
