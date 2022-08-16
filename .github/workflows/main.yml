@@ -32,5 +32,6 @@ jobs:
         env:
           PACE_SSH_KEY: ${{ secrets.PACE_SSH_KEY }}
         run: |
-          echo $PACE_SSH_KEY ~/id_rsa_pace
+          echo $PACE_SSH_KEY > ~/id_rsa_pace
+          ls -l ~/
           scp -i ~/id_rsa_pace -r ./* pace@pace.ucsd.edu:~/htdocs/
