@@ -125,6 +125,7 @@
 	}
 
 	div.banner .times {
+		padding-top: 20px;
 		background-color: var(--uc-orange);
 	}
 
@@ -134,7 +135,15 @@
 		font-weight: 600;
 		color: white;
 
-		text-align: right;
+		text-align: left;
+	}
+	.banner .times dt {
+		font-family: 'Inter';
+		font-size: 32px;
+		color: white;
+
+		text-align: left;
+		padding-bottom: 10px;
 	}
 }
 
@@ -227,6 +236,26 @@
 }
 
 
+@media screen and (min-width: 1440px) {
+
+	.learn-more .feature {
+		margin-top: 20px;
+		background: var(--uc-orange);
+		color: white;
+		font-size: 36px;
+		padding: 20px;
+	}
+
+	.learn-more .explanation {
+		padding-top: 40px;
+	}
+
+	.learn-more .explanation p {
+		font-size: 24px;
+	}
+}
+
+
 @media screen and (max-width: 720px) {
 	.directions img {
 		width: 100%;
@@ -266,6 +295,14 @@
 }
 
 @media screen and (min-width: 720px) {
+
+	.directions .feature {
+		margin-top: 20px;
+		background: var(--uc-orange);
+		color: white;
+		font-size: 36px;
+		padding: 20px;
+	}
 	.directions img {
 		width: 600px;
 		max-width: 100%;
