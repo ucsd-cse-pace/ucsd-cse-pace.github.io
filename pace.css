@@ -37,7 +37,7 @@
 @media screen and (max-width: 1140px) {
 
 	header {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 24px;
 		font-weight: 600;
 		letter-spacing: 2pt;
@@ -55,7 +55,7 @@
 	}
 
 	header button {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-weight: 300;
 		font-size: 14px;
 
@@ -71,7 +71,7 @@
 
 @media screen and (min-width:1140px) {
 	header {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 40px;
 		font-weight: 600;
 		letter-spacing: 2pt;
@@ -86,7 +86,7 @@
 	}
 
 	header button {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-weight: 300;
 		font-size: 24px;
 
@@ -119,7 +119,7 @@
 	}
 
 	.banner .times dd {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 26px;
 		font-weight: 600;
 		color: white;
@@ -142,7 +142,7 @@
 	}
 
 	.banner .times dd {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 32px;
 		font-weight: 600;
 		color: white;
@@ -150,7 +150,7 @@
 		text-align: left;
 	}
 	.banner .times dt {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 32px;
 		color: white;
 
@@ -168,13 +168,13 @@
 
 	.info span.lead-in {
 		color: var(--uc-blue);
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 26px;
 		font-weight: 600;
 	}
 
 	.info li {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 18px;
 	}
 
@@ -184,7 +184,7 @@
 	}
 
 	.location button {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-weight: 300;
 		font-size: 14px;
 
@@ -198,7 +198,7 @@
 
 	.location span {
 		color: var(--uc-teal);
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 20px;
 	}
 
@@ -211,13 +211,13 @@
 
 	.info span.lead-in {
 		color: var(--uc-blue);
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 40px;
 		font-weight: 600;
 	}
 
 	.info li {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 24px;
 	}
 
@@ -226,7 +226,7 @@
 	}
 
 	.location button {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-weight: 300;
 		font-size: 24px;
 
@@ -242,7 +242,7 @@
 
 	.location span {
 		color: var(--uc-teal);
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 40px;
 	}
 }
@@ -266,7 +266,7 @@
 	}
 
 	.directions button {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-weight: 300;
 		font-size: 14px;
 
@@ -306,7 +306,7 @@
 	}
 
 	.directions button {
-		font-family: 'Inter';
+		font-family: 'Source Sans Pro', sans-serif;;
 		font-weight: 300;
 		font-size: 18px;
 
