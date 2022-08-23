@@ -337,6 +337,7 @@
 	.team .team-member {
 		display: flex;
 		justify-content: space-around;
+		padding: 10px
 	}
 	.team .team-member img {
 		width: 200px;	
