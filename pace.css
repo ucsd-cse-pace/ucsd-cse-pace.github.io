@@ -57,15 +57,19 @@
 	header button {
 		font-family: 'Source Sans Pro', sans-serif;;
 		font-weight: 300;
-		font-size: 14px;
+		font-size: 24px;
 
 		color: var(--uc-blue);
-		border: 1px solid var(--uc-gold);
-		height: 33px;
-		background-color: white;;
+		border: 3px solid var(--uc-gold);
+		height: 36px;
+		background-color: white;
 		border-radius: 10px;
 
 		cursor: pointer;
+	}
+
+	header button a {
+		color: var(--uc-blue);
 	}
 }
 
@@ -88,16 +92,20 @@
 	header button {
 		font-family: 'Source Sans Pro', sans-serif;;
 		font-weight: 300;
-		font-size: 24px;
+		font-size: 36px;
 
 		color: var(--uc-blue);
-		border: 3px solid var(--uc-gold);
+		border: 5px solid var(--uc-gold);
 		width: 240px;
 		height: 68px;
-		background-color: white;;
+		background-color: white;
 		border-radius: 10px;
 
 		cursor: pointer;
+	}
+
+	header button a {
+		color: var(--uc-blue);
 	}
 }
 
@@ -120,9 +128,18 @@
 
 	.banner .times dd {
 		font-family: 'Source Sans Pro', sans-serif;;
-		font-size: 26px;
+		font-size: 16px;
 		font-weight: 600;
 		color: white;
+
+		text-align: center;
+	}
+
+	.banner .times dt {
+		font-family: 'Source Sans Pro', sans-serif;;
+		font-size: 20px;
+		font-weight: 600;
+		color: var(--uc-blue);
 
 		text-align: center;
 	}
@@ -143,7 +160,7 @@
 
 	.banner .times dd {
 		font-family: 'Source Sans Pro', sans-serif;;
-		font-size: 32px;
+		font-size: 24px;
 		font-weight: 600;
 		color: white;
 
@@ -152,7 +169,7 @@
 	.banner .times dt {
 		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 32px;
-		color: white;
+		color: var(--uc-blue);
 
 		text-align: left;
 		padding-bottom: 10px;
