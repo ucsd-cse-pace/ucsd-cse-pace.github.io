@@ -5,9 +5,15 @@
 	--uc-gold: #FFCD00;
 	--uc-orange: #FC8900;
 	--uc-grey: #B6B1A9;
+	--Huge: 40px;
+	--huge: 36px;
+	--Large: 36px;
+	--large: 24px;
+	--Normal: 20px;
+	--normal: 18px;
 }
 
-
+/* Mobile: banner image above centered text */
 @media screen and (max-width: 1140px) {
 	.main-content {
 		padding: 0;
@@ -15,24 +21,22 @@
 		width: 100%;
 	}
 
-	.feature {
-		margin-top: 20px;
-		background: var(--uc-orange);
-		color: white;
-		font-size: 24px;
-		padding: 10px;
-	}
-
 	header {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 24px;
+		font-size: var(--huge);
 		font-weight: 600;
 		letter-spacing: 2pt;
 		color: var(--uc-teal);
 
 		padding: 5px;
 
+		margin-top: auto;
+		margin-bottom: auto;
+		padding-bottom: 20px;
+
 	}
+
+	/* Shorten name for small viewports*/
 	header .cse-cohorts {
 		display: none;
 	}	
@@ -44,7 +48,7 @@
 	header button {
 		font-family: 'Source Sans Pro', sans-serif;;
 		font-weight: 300;
-		font-size: 24px;
+		font-size: var(--large);
 
 		color: var(--uc-blue);
 		border: 3px solid var(--uc-gold);
@@ -59,28 +63,74 @@
 		color: var(--uc-blue);
 	}
 
+	.info {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 20px;
+	}
+
+	.info span.lead-in {
+		color: var(--uc-blue);
+		font-family: 'Source Sans Pro', sans-serif;;
+		font-size: var(--large);
+		font-weight: 600;
+	}
+
+	.info li {
+		font-family: 'Source Sans Pro', sans-serif;;
+		font-size: var(--normal);
+	}
+
+	.info img {
+		padding-top: 10px;
+		width: 100%;
+	}
+
+	.location button {
+		font-family: 'Source Sans Pro', sans-serif;;
+		font-weight: 300;
+		font-size: var(--normal);
+
+		color: var(--uc-blue);
+		border: 1px solid var(--uc-gold);
+		background-color: white;;
+		border-radius: 10px;
+
+		cursor: pointer;
+	}
+
+	/* Maybe not used?
+	.location span {
+		color: var(--uc-teal);
+		font-family: 'Source Sans Pro', sans-serif;;
+		font-size: 20px;
+	}*/
+
+	.feature {
+		margin-top: 20px;
+		background: var(--uc-orange);
+		color: white;
+		font-size: var(--large);
+		padding: 10px;
+	}
+
+	.feature span {
+		padding-left: 20px;
+	}
+
 }
 
+/* Large viewport: banner side-by-side image and text */
 @media screen and (min-width: 1140px) {
 	.main-content {
 		padding-left: 55px;
 		padding-right: 55px;
 		padding-top: 47px;
 	}
-	.feature {
-		margin-top: 20px;
-		background: var(--uc-orange);
-		color: white;
-		font-size: 36px;
-		padding: 20px;
-	}
-	.feature span {
-		padding-left: 20px;
-	}
 
 	header {
 		font-family: 'Source Sans Pro', sans-serif;;
-		font-size: 40px;
+		font-size: var(--Huge);
 		font-weight: 600;
 		letter-spacing: 2pt;
 		color: var(--uc-teal);
@@ -89,6 +139,7 @@
 		margin-bottom: auto;
 		padding-bottom: 20px;
 	}
+
 	header img {
 		height: 88px;
 	}
@@ -96,7 +147,7 @@
 	header button {
 		font-family: 'Source Sans Pro', sans-serif;;
 		font-weight: 300;
-		font-size: 36px;
+		font-size: var(--Large);
 
 		color: var(--uc-blue);
 		border: 5px solid var(--uc-gold);
@@ -111,6 +162,64 @@
 	header button a {
 		color: var(--uc-blue);
 	}
+
+	.info {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 20px;
+	}
+
+	.info span.lead-in {
+		color: var(--uc-blue);
+		font-family: 'Source Sans Pro', sans-serif;;
+		font-size: var(--Large);
+		font-weight: 600;
+	}
+
+	.info li {
+		font-family: 'Source Sans Pro', sans-serif;;
+		font-size: var(--Normal);
+	}
+
+	.info img {
+		padding-top: 10px;
+		width: 100%;
+	}
+
+	.location button {
+		font-family: 'Source Sans Pro', sans-serif;;
+		font-weight: 300;
+		font-size: var(--Normal);
+
+		color: var(--uc-blue);
+		border: 3px solid var(--uc-gold);
+		width: 165px;
+		height: 80px;
+		background-color: white;;
+		border-radius: 10px;
+
+		cursor: pointer;
+	}
+
+	/* Maybe not used?
+	.location span {
+		color: var(--uc-teal);
+		font-family: 'Source Sans Pro', sans-serif;;
+		font-size: 40px;
+	}*/
+
+	.feature {
+		margin-top: 20px;
+		background: var(--uc-orange);
+		color: white;
+		font-size: var(--Large);
+		padding: 10px;
+	}
+
+	.feature span {
+		padding-left: 20px;
+	}
+
 }
 
 @media screen and (max-width: 992px) {
@@ -181,93 +290,6 @@
 	}
 }
 
-@media screen and (max-width: 1140px) {
-	.info {
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 20px;
-	}
-
-	.info span.lead-in {
-		color: var(--uc-blue);
-		font-family: 'Source Sans Pro', sans-serif;;
-		font-size: 26px;
-		font-weight: 600;
-	}
-
-	.info li {
-		font-family: 'Source Sans Pro', sans-serif;;
-		font-size: 18px;
-	}
-
-	.info img {
-		padding-top: 10px;
-		width: 100%;
-	}
-
-	.location button {
-		font-family: 'Source Sans Pro', sans-serif;;
-		font-weight: 300;
-		font-size: 14px;
-
-		color: var(--uc-blue);
-		border: 1px solid var(--uc-gold);
-		background-color: white;;
-		border-radius: 10px;
-
-		cursor: pointer;
-	}
-
-	.location span {
-		color: var(--uc-teal);
-		font-family: 'Source Sans Pro', sans-serif;;
-		font-size: 20px;
-	}
-
-}
-
-@media screen and (min-width: 1140px) {
-	.info {
-		padding-top: 20px;
-	}
-
-	.info span.lead-in {
-		color: var(--uc-blue);
-		font-family: 'Source Sans Pro', sans-serif;;
-		font-size: 40px;
-		font-weight: 600;
-	}
-
-	.info li {
-		font-family: 'Source Sans Pro', sans-serif;;
-		font-size: 24px;
-	}
-
-	.info img {
-		width: 100%;
-	}
-
-	.location button {
-		font-family: 'Source Sans Pro', sans-serif;;
-		font-weight: 300;
-		font-size: 22px;
-
-		color: var(--uc-blue);
-		border: 3px solid var(--uc-gold);
-		width: 165px;
-		height: 80px;
-		background-color: white;;
-		border-radius: 10px;
-
-		cursor: pointer;
-	}
-
-	.location span {
-		color: var(--uc-teal);
-		font-family: 'Source Sans Pro', sans-serif;;
-		font-size: 40px;
-	}
-}
 
 
 @media screen and (min-width: 1440px) {
