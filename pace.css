@@ -84,10 +84,7 @@
 
 	.info img {
 		padding-top: 10px;
-		max-width: 500px;
-		max-height: 333px;
-		height: auto;
-		width: auto;
+		width: 100%;
 	}
 
 	.info .you-will {
@@ -252,10 +249,11 @@
 	div.banner .left {
 		background-image: url("images/Campus-Life-44-UCSanDiego-ErikJepsen.jpg");
 		background-size: cover;
-		background-position-y: 350px;
+		background-repeat: no-repeat;
+		background-position-y: -50px;
 		width: 100%;
-		min-height: 300px;
-		max-height: 300px;
+		min-height: 150px;
+		max-height: 150px;
 		/* TODO: rotate background image */
 	}
 
