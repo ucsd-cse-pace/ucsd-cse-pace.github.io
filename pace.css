@@ -4,7 +4,9 @@
 	--uc-blue: #00629B;
 	--uc-gold: #FFCD00;
 	--uc-orange: #FC8900;
+	--uc-grey: #B6B1A9;
 }
+
 
 @media screen and (max-width: 1140px) {
 	.main-content {
@@ -13,28 +15,13 @@
 		width: 100%;
 	}
 
-}
-
-@media screen and (min-width: 1140px) {
-	.main-content {
-		padding-left: 55px;
-		padding-right: 55px;
-		padding-top: 47px;
-	}
 	.feature {
 		margin-top: 20px;
 		background: var(--uc-orange);
 		color: white;
-		font-size: 36px;
-		padding: 20px;
+		font-size: 24px;
+		padding: 10px;
 	}
-	.feature span {
-		padding-left: 20px;
-	}
-
-}
-
-@media screen and (max-width: 1140px) {
 
 	header {
 		font-family: 'Source Sans Pro', sans-serif;
@@ -71,9 +58,26 @@
 	header button a {
 		color: var(--uc-blue);
 	}
+
 }
 
-@media screen and (min-width:1140px) {
+@media screen and (min-width: 1140px) {
+	.main-content {
+		padding-left: 55px;
+		padding-right: 55px;
+		padding-top: 47px;
+	}
+	.feature {
+		margin-top: 20px;
+		background: var(--uc-orange);
+		color: white;
+		font-size: 36px;
+		padding: 20px;
+	}
+	.feature span {
+		padding-left: 20px;
+	}
+
 	header {
 		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: 40px;
@@ -116,9 +120,10 @@
 	div.banner .left {
 		background-image: url("images/Campus-Life-44-UCSanDiego-ErikJepsen.jpg");
 		background-size: cover;
-		background-position-y: 400px;
+		background-position-y: 350px;
 		width: 100%;
-		min-height: 100px;
+		min-height: 300px;
+		max-height: 300px;
 		/* TODO: rotate background image */
 	}
 
