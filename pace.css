@@ -14,7 +14,7 @@
 }
 
 /* Mobile: banner image above centered text */
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 992px) {
 	.main-content {
 		padding: 0;
 		margin: 0;
@@ -22,6 +22,7 @@
 	}
 
 	header {
+		position: sticky;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: var(--huge);
 		font-weight: 600;
@@ -121,7 +122,7 @@
 }
 
 /* Large viewport: banner side-by-side image and text */
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 992px) {
 	.main-content {
 		padding-left: 55px;
 		padding-right: 55px;
@@ -129,6 +130,7 @@
 	}
 
 	header {
+		position: sticky;
 		font-family: 'Source Sans Pro', sans-serif;;
 		font-size: var(--Huge);
 		font-weight: 600;
@@ -291,8 +293,21 @@
 }
 
 
+@media screen and (max-width: 992px) {
 
-@media screen and (min-width: 1440px) {
+	.learn-more .explanation {
+		padding-top: 40px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.learn-more .explanation p {
+		font-size: var(--normal);
+	}
+}
+
+
+@media screen and (min-width: 992px) {
 
 	.learn-more .explanation {
 		padding-top: 40px;
@@ -304,7 +319,7 @@
 }
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 992px) {
 	.directions img {
 		width: 100%;
 	}
@@ -342,7 +357,7 @@
 
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 992px) {
 
 	.directions img {
 		width: 600px;
@@ -377,7 +392,25 @@
 
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 992px) {
+	.team .team-member {
+		display: flex;
+		justify-content: space-around;
+		padding: 10px;
+	}
+	.team .team-member img {
+		max-width: 200px;	
+	}
+	.team .team-member .bio {
+		padding-left: 10px
+	}
+	.team .team-member h3 {
+		color: var(--uc-blue);
+	}
+
+}
+
+@media screen and (min-width: 992px) {
 	.team .team-member {
 		display: flex;
 		justify-content: space-around;
