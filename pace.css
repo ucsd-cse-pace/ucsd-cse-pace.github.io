@@ -53,7 +53,7 @@
 
 		color: var(--uc-blue);
 		border: 3px solid var(--uc-gold);
-		height: 36px;
+		height: 44px;
 		background-color: white;
 		border-radius: 10px;
 
@@ -146,6 +146,7 @@
 		border: 1px solid var(--uc-gold);
 		background-color: white;
 		border-radius: 10px;
+		min-width: 130px;
 
 		cursor: pointer;
 	}
