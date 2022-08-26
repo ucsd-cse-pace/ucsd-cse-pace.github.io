@@ -216,11 +216,14 @@
 	}
 
 	.team .team-member img {
-		width: 120px;	
+		max-width: 120px;	
+		height: auto;
+		object-fit: cover;
 	}
 
 	.team .team-member .bio {
-		padding-left: 10px
+		padding-left: 10px;
+		flex-grow: 1;
 	}
 
 	.team .team-member h3 {
@@ -415,6 +418,8 @@
 
 	.team .team-member img {
 		width: 180px;	
+		height: auto;
+		object-fit: cover;
 	}
 
 	.team .team-member .bio {
