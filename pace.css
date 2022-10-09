@@ -13,6 +13,17 @@
 	--normal: 18px;
 }
 
+.footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: var(--uc-blue);
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px;
+  }
+
 /* Mobile: banner image above centered text */
 @media screen and (max-width: 992px) {
 	.main-content {
