@@ -3890,7 +3890,9 @@ exports.Tooltip = Tooltip;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-$('.carousel').carousel()
+$('.carousel').carousel(
+  {interval:200}
+)
 
 })));
 //# sourceMappingURL=bootstrap.js.map
