@@ -23,6 +23,14 @@
 	font-size: 12px;
 	padding: 10px;
   }
+  
+#myCarousel {
+	margin: 10px;
+}
+
+#myCarousel img {
+	height: 600px;
+}
 
 /* Mobile: banner image above centered text */
 @media screen and (max-width: 992px) {
