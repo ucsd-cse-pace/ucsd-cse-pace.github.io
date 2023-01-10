@@ -88,14 +88,13 @@
 	}
 
 	div.banner .left {
-		background-image: url("images/Campus-Life-44-UCSanDiego-ErikJepsen.jpg");
+		background-image: url("images/W10_3.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position-y: -50px;
+		background-position-y: 0px;
 		width: 100%;
-		min-height: 150px;
-		max-height: 150px;
-		/* TODO: rotate background image */
+		min-height: 200px;
+		max-height: 200px;
 	}
 
 	div.banner .times {
@@ -301,7 +300,7 @@
 
 
 	div.banner .left {
-		background-image: url("images/banner.png");
+		background-image: url("images/W10_3.jpg");
 		background-size: cover;
 		min-height: 100px;
 	}
