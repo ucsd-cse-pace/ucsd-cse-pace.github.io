@@ -250,6 +250,14 @@
 
 	.team .team-member h3 {
 		color: var(--uc-blue);
+		margin: 10px;
+	}
+
+	.team dt{
+		margin: 10px;
+	}
+	.team dd{
+		margin: 20px;
 	}
 
 }
@@ -458,6 +466,13 @@
 
 	.team .team-member h3 {
 		color: var(--uc-blue);
+	}
+	.team dt {
+		margin: 10px;
+	}
+
+	.team dd{
+		margin: 20px;
 	}
 
 }
