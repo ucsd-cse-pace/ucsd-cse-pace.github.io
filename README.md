@@ -31,3 +31,6 @@ to copy and overwrite all the files in the relevant target directory on that hos
 To deploy, use the Actions interface:
 
 <img width="1305" alt="image" src="https://user-images.githubusercontent.com/119891/184945789-bd2e4cd1-c5e6-425e-9cb9-63f65e88df32.png">
+
+
+You can also run `bash publish.sh` from a computer that's able to ssh to `pace@pace.ucsd.edu`
