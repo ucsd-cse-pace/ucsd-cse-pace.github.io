@@ -260,6 +260,10 @@
 		margin: 20px;
 	}
 
+	h2 {
+		font-size: var(--large);
+	}
+
 }
 
 /* Large viewport: banner side-by-side image and text */
@@ -474,5 +478,7 @@
 	.team dd{
 		margin: 20px;
 	}
-
+	h2 {
+		font-size: var(--large);
+	}
 }
