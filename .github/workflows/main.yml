@@ -19,15 +19,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Download handbook
-      - name: Download index.md
+      # Convert Markdown to Markdeep HTML
+      - name: Download handbook
         run: |
           curl -o handbook/index.md https://raw.githubusercontent.com/ucsd-cse-pace/handbook/main/index.md
-        
-      # Convert to html
-      - name: Convert index.md to HTML
-        run: |
-          pandoc -s handbook/index.md -o handbook/index.html --metadata title="PACE Handbook"
+          cat handbook/header.txt handbook/index.md handbook/footer.txt > handbook/index.md.html
 
       # Used ssh-keyscan to generate KNOWN_HOSTS
       - name: Copy to pace.ucsd.edu
