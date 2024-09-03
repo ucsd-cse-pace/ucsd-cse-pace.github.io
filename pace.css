@@ -67,7 +67,7 @@
 		font-size: var(--large);
 
 		color: var(--uc-blue);
-		border: 3px solid var(--uc-gold);
+		border: 3px solid white;
 		height: 44px;
 		background-color: white;
 		border-radius: 10px;
@@ -308,7 +308,7 @@
 		font-size: var(--Large);
 
 		color: var(--uc-blue);
-		border: 5px solid var(--uc-gold);
+		border: 5px solid white;
 		width: 240px;
 		height: 68px;
 		background-color: white;
