@@ -1,1 +1,1 @@
-scp -r ./* pace@pace.ucsd.edu:~/htdocs/
+scp -r ./* pace@mywebsite.eng.ucsd.edu:~/htdocs/
