@@ -7,32 +7,35 @@
     <title>CSE-PACE</title>
 
 	<link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="pace.css">
 
     <!-- Bootstrap -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"></script>
+	
+	<!--Commenting out to plan to use exclusively Bootstrap 4-->
+	<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"></script>-->
 
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css">
 
-	<!-- Stylesheet containing icons for social media sites-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Stylesheet containing icons for fonts and social media site icons, loaded asynchronously-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" rel="preload" as="style">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="preload" as="style">
 
-    <link rel="stylesheet" href="pace.css">
   </head>
   <body>
 	<div class="container-fluid main-content">
-		<header class="row no-gutters align-items-center justify-content-between position-sticky">
+		<header class="row no-gutters align-items-center justify-content-between position-sticky flex-nowrap">
 			<span class="col-8">
 				<img src="images/logo/Logo-plain.png"/>
 				<span alt="PACE CSE Cohorts" tabindex="1">CSE-PACE<span class="cse-cohorts"> Cohorts</span></span>
 			</span>	
-			<div class="wrapper" style="display: flex; flex-wrap: nowrap;">
+			<div class="col-8">
 				<button class="noborder">
-				<a href="https://www.instagram.com/paceucsd" class="fa fa-instagram"></a>
+				<a href="https://www.instagram.com/paceucsd" class="fa fa-instagram" aria-label="Instagram link" title="Follow PACE on Instagram" alt="PACE on Instagram"></a>
 				</button>
 				<button>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSeL1-IsamYi_UeIBkDtozQFHk-VExRdb-kzifXFjspWgA26Yg/viewform">Register Now</a>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSeL1-IsamYi_UeIBkDtozQFHk-VExRdb-kzifXFjspWgA26Yg/viewform"  aria-label="Registration form link" title="Use this form to register">Register Now</a>
 				</button>
 			</div>
 		</header>
@@ -71,23 +74,23 @@
 		</div>
 
 		<div class="row no-gutters justify-content-around align-content-center">
-		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+		<div id="photo-carousel" class="carousel slide" data-bs-ride="carousel">
 			
 			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
+				<button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
 			  </div>
 
 			<div class="carousel-inner">
@@ -535,7 +538,7 @@
 		</div>
 	</div>
 
-	<div class="row no-gutters handbook justify-content-around">
+	<div class="row no-gutters learn-more justify-content-around">
 		<a name="handbook"></a>
 		<div class="col-lg-12 feature"><span>PACE Handbook</span></div>
 		<div class="col-lg-10 explanation">

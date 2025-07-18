@@ -1,16 +1,15 @@
-
 :root {
 	--uc-teal: #00C6D7;
 	--uc-blue: #00629B;
 	--uc-gold: #FFCD00;
 	--uc-orange: #FC8900;
 	--uc-grey: #B6B1A9;
-	--Huge: 40px;
-	--huge: 36px;
-	--Large: 36px;
-	--large: 24px;
-	--Normal: 20px;
-	--normal: 18px;
+	--huge-computer: 40px;
+	--huge-mobile: 36px;
+	--large-computer: 36px;
+	--large-mobile: 24px;
+	--normal-computer: 20px;
+	--normal-mobile: 18px;
 }
 
 .footer {
@@ -22,14 +21,15 @@
 	text-align: center;
 	font-size: 12px;
 	padding: 10px;
-  }
+}
   
-#myCarousel {
+#photo-carousel {
 	margin: 10px;
 }
 
+
 /* Mobile: banner image above centered text */
-@media screen and (max-width: 992px) {
+/*@media screen and (max-width: 992px) {*/
 	.main-content {
 		padding: 0;
 		margin: 0;
@@ -39,7 +39,8 @@
 	header {
 		position: sticky;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: var(--huge);
+		/* font-size: var(--huge-mobile);*/
+		font-size: clamp(var(--normal-mobile),5vw,var(--huge-computer));
 		font-weight: 600;
 		letter-spacing: 2pt;
 		color: var(--uc-teal);
@@ -64,14 +65,16 @@
 	header button {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		font-size: var(--large);
-
+		/*font-size: var(--large-mobile);*/
+		font-size: clamp(var(--normal-mobile),4vw,var(--huge-computer));
 		color: var(--uc-blue);
 		border: 3px solid white;
 		height: 44px;
 		background-color: white;
 		border-radius: 10px;
 		cursor: pointer;
+
+		flex-basis: 20%; /* responsive width */
 	}
 
 	header button a {
@@ -98,7 +101,8 @@
 
 	.banner .times dd {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: var(--normal);
+		/*font-size: var(--normal-mobile);*/
+		font-size: clamp(var(--normal-mobile),1vw,var(--normal-computer));
 		font-weight: 600;
 		line-height: 85%;
 		color: white;
@@ -108,17 +112,18 @@
 
 	.banner .times dt {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: var(--large);
+		font-size: clamp(var(--large-mobile),1vw,var(--large-computer));
 		font-weight: 600;
-		line-height: normal;
-		color: white;
+		line-height: clamp(var(--normal-mobile),1vw,var(--normal-computer));
+		color: var(--uc-blue);
 
 		text-align: center;
 
+		padding-top:10px;
 		padding-bottom: 10px;
 	}
 
-	#myCarousel img {
+	#photo-carousel img {
 		height: 400px;
 	}
 
@@ -131,13 +136,13 @@
 	.info span.lead-in {
 		color: var(--uc-blue);
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: var(--large);
+		font-size: clamp(var(--large-mobile),1vw,var(--large-computer));
 		font-weight: 600;
 	}
 
 	.info li {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: var(--normal);
+		font-size: clamp(var(--normal-mobile),1vw,var(--normal-computer));
 	}
 
 	.info img {
@@ -157,7 +162,7 @@
 	.location button {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		font-size: var(--normal);
+		font-size: clamp(var(--normal-mobile),1vw,var(--normal-computer));
 
 		color: var(--uc-blue);
 		border: 1px solid var(--uc-gold);
@@ -173,7 +178,7 @@
 		margin-top: 20px;
 		background: var(--uc-orange);
 		color: white;
-		font-size: var(--large);
+		font-size: clamp(var(--large-mobile),1vw,var(--large-computer));
 		padding: 10px;
 	}
 
@@ -182,29 +187,10 @@
 		display: inline-block;
 	}
 
-	.handbook .explanation {
-		padding-top: 40px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	.handbook .explanation p {
-		font-size: var(--normal);
-	}
-
-
-	.learn-more .explanation {
-		padding-top: 40px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
 	.learn-more .explanation p {
-		font-size: var(--normal);
-	}
-
-	.learn-more emph {
-		font-style: italic;
+		padding: 10px;
+		margin: 10px;
+		font-size: clamp(var(--normal-mobile),1vw,var(--normal-computer));
 	}
 
 	/* directions class is for two map version buttons*/
@@ -215,7 +201,7 @@
 	.directions button {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 600;
-		font-size: var(--normal);
+		font-size: clamp(var(--normal-mobile),1vw,var(--normal-computer));
 
 		color: var(--uc-blue);
 		border: 1px solid var(--uc-gold);
@@ -234,7 +220,7 @@
 	}
 
 	.directions .map-links span {
-		font-size: var(--normal);
+		font-size: clamp(var(--normal-mobile),1vw,var(--normal-computer));
 	}
 
 	.directions .map-links {
@@ -272,235 +258,5 @@
 	}
 
 	h2 {
-		font-size: var(--large);
+		font-size: clamp(var(--large-mobile),1vw,var(--large-computer));
 	}
-
-}
-
-/* Large viewport: banner side-by-side image and text */
-@media screen and (min-width: 992px) {
-	.main-content {
-		padding-left: 55px;
-		padding-right: 55px;
-		padding-top: 47px;
-	}
-
-	header {
-		position: sticky;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: var(--Huge);
-		font-weight: 600;
-		letter-spacing: 2pt;
-		color: var(--uc-teal);
-
-		margin-top: auto;
-		margin-bottom: auto;
-		padding-bottom: 20px;
-	}
-
-	header img {
-		height: 88px;
-	}
-
-	header button {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
-		font-size: var(--Large);
-
-		color: var(--uc-blue);
-		border: 5px solid white;
-		width: 240px;
-		height: 68px;
-		background-color: white;
-		border-radius: 10px;
-
-		cursor: pointer;
-	}
-
-	header button a {
-		color: var(--uc-blue);
-	}
-
-
-	div.banner .left {
-		background-image: url("images/W10_3.jpg");
-		background-size: cover;
-		min-height: 100px;
-	}
-
-	div.banner .times {
-		padding-top: 20px;
-		padding-left: 20px;
-		background-color: var(--uc-orange);
-	}
-
-	.banner .times dd {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: var(--Normal);
-		font-weight: 600;
-		color: white;
-
-		text-align: left;
-	}
-	.banner .times dt {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: var(--Large);
-		color: white;
-
-		text-align: left;
-		padding-right: 20px;
-		padding-bottom: 10px;
-	}
-
-	#myCarousel img {
-		height: 600px;
-	}
-	
-	.info {
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 20px;
-	}
-
-	.info span.lead-in {
-		color: var(--uc-blue);
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: var(--Large);
-		font-weight: 600;
-	}
-
-	.info li {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: var(--Normal);
-	}
-
-	.info img {
-		padding-top: 10px;
-		width: 100%;
-		padding-right: 10px;
-		max-width: 500px;
-		max-height: 333px;
-		height: auto;
-		/*width: auto;*/
-		align-self: center;
-	}
-
-	.info .you-will {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
-
-	/* location class is for four "call to action buttons"*/
-	.location button {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 600;
-		font-size: var(--Normal);
-
-		color: var(--uc-blue);
-		border: 3px solid var(--uc-gold);
-		width: 140px;
-		height: 70px;
-		background-color: white;
-		border-radius: 10px;
-
-		cursor: pointer;
-    	margin-bottom: 10px;
-	}
-
-	.handbook .explanation {
-		padding-top: 40px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	.handbook .explanation p {
-		font-size: var(--normal);
-	}
-
-	.feature {
-		margin-top: 20px;
-		background: var(--uc-orange);
-		color: white;
-		font-size: var(--Large);
-		padding: 10px;
-	}
-
-	.feature span {
-		padding-left: 20px;
-	}
-
-	.learn-more .explanation {
-		padding-top: 40px;
-	}
-
-	.learn-more .explanation p {
-		font-size: var(--Normal);
-	}
-	
-	.learn-more emph {
-		font-style: italic;
-	}
-
-	/* directions class is for two map version buttons*/
-	.directions img {
-		width: 600px;
-		max-width: 100%;
-	}
-
-	.directions button {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 600;
-		font-size: var(--Normal);
-
-		color: var(--uc-blue);
-		border: 3px solid var(--uc-gold);
-		background-color: white;
-		border-radius: 10px;
-
-		margin-left: 1em;
-		margin-right: 1em;
-		padding: 10px;
-
-		cursor: pointer;
-	}
-
-	.directions .map-links span {
-		font-size: var(--Normal);
-	}
-
-	.directions .map-links {
-		padding-top: 1em;
-		padding-bottom: 1em;
-	}
-
-	.team .team-member {
-		display: flex;
-		justify-content: space-around;
-		padding: 10px
-	}
-
-	.team .team-member img {
-		width: 180px;	
-		height: auto;
-		object-fit: cover;
-	}
-
-	.team .team-member .bio {
-		padding-left: 10px
-	}
-
-	.team .team-member h3 {
-		color: var(--uc-blue);
-	}
-	.team dt {
-		margin: 10px;
-	}
-
-	.team dd{
-		margin: 20px;
-	}
-	h2 {
-		font-size: var(--large);
-	}
-}
