@@ -9,6 +9,7 @@
 	<!-- Stylesheet for Bootsrap, fonts, and social media site icons, loaded asynchronously -->
 	<link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"   type="text/css" rel="preload" as="style">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" rel="preload" as="style">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" type="text/css" rel="preload" as="style">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="preload" as="style">
 	
 	<!-- PACE Stylesheet, loaded asynchronously -->
@@ -19,10 +20,10 @@
 	<div class="container-fluid main-content">
 		<!--Header is PACE logo on left and quick links on right-->
 		<header class="row no-gutters align-items-center justify-content-between position-sticky flex-nowrap">
-			<div class="col-8">
+			<h1 class="col-8">
 				<img src="images/logo/Logo-plain.png"/>
-				<span alt="PACE CSE Cohorts" tabindex="1">CSE-PACE<span class="cse-cohorts"> Cohorts</span></span>
-			</div>	
+				<span alt="PACE CSE Cohorts" tabindex="1" class="cse-cohorts">CSE-PACE Cohorts</span>
+			</h1>	
 			<div class="col-4 flex-nowrap">
 				<button>
 					<a href="https://www.instagram.com/paceucsd" class="fa fa-instagram" aria-label="Instagram link" title="Follow PACE on Instagram" alt="PACE on Instagram"></a>
@@ -226,167 +227,178 @@
 		<a name="team"></a>
 		<div class="row no-gutters justify-content-around">
 			<banner><p>CSE-PACE Team</p></banner>
-			<teammember class="col-lg-6">
-				<img src="images/team/profile_ali.png" alt="" aria-label="profile picture of Ali"></img>
-				<bio>
-					<h3>Ali El Lahib</h3>
-					<p>Hi! I'm Ali and I'm a 4th year majoring in Computer Science at Revelle College! Within CS, I'm very interested in Artificial Intelligence and Robotics. I have also been exploring philosophy, so sometimes you'll find me at UCSD's Philosophy Club! Feel free to reach out if you have any questions!
-					</p>
-				</bio>
-			</teammember>
 
-			<teammember class="col-lg-6">
-				<img src="images/team/Chernova.png"" aria-label="profile picture of Anya"></img>
-				<bio>
-					<h3>Anya Chernova</h3>
-					<p>My name is Anya, and I'm a fourth year Computer Science major. I enjoy exploring different areas of Computer Science to understand what I am most passionate about. My hobbies are drawing, snowboarding and swimming. In addition, I'm always excited to try out new activities whenever I get a chance. I am very happy to be your mentor and am really looking forward to meeting you! Please don't hesitate to reach out if you have any questions or just want to chat!
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">
-				<img src="images/team/Brendan Barber.jpg" alt="" aria-label="profile picture of Brendan"></img>
-				<bio>
-					<h3>Brendan Barber</h3>
-					<p>Hello! I'm Brendan, a second-year CS major in Seventh College. When I'm not coding, you'll find me practicing violin, playing hockey, or rock climbing. And when I’m too tired for those things, I'll probably be lost in a good book, whether it's historical non-fiction, fantasy, or sci-fi.
-					</p>
-				</bio>
-			</teammember>
+			<team-section>
+				<h2>Leadership</h2>
 
-			<teammember class="col-lg-6">
-				<img src="images/team/Dante SPIS Photo Headshot.jpg" alt="" aria-label="profile picture of D'ante"></img>
-				<bio>
-					<h3>D'ante McCurty</h3>
-					<p>Hi my name is D'ante McCurty and I am a fourth year Computer Science major. I love everything pop culture as well as meeting new people. My favorite hobbies are playing video games and playing board games with my friends.
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">
-				<img src="images/team/Gonzalo_Ocean_Vacation.png" alt="" aria-label="profile picture of Gonzalo"></img>
-				<bio>
-					<h3>Gonzalo Allen-Perez</h3>
-					<p>Hi there and welcome to PACE! I'm Gonzalo and I'm a 4th year CS major (and 2nd time PACE LPM). I'm really into dancing, tennis, reading, watching movies, and playing guitar. I'm always down for a chat at PACE or anywhere else on campus, so don't hesitate to reach out! Looking forward to another great year :) 
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">
-				<img src="images/team/JoshuaVillanueva.jpg" alt="" aria-label="profile picture of Joshua"></img>
-				<bio>
-					<h3>Joshua Villanueva</h3>
-					<p>Hello incoming students and welcome to PACE! My name is Joshua Villanueva and I am a low income, first generation, Computer Engineering student. I am happy and thankful to be a part of our UCSD family. Fun fact: A side hobby of mine is making music and when I am not doing that, I like to bury my head in a book, go on a fun hike, or go out to a concert with my friends.
-					</p>
-				</bio>
-			</teammember>
+				<teammember tabindex="0">
+					<img src="images/team/MiaMinnes.jpg" alt="" aria-label="profile picture of Mia"/>
+					<bio>
+						<h3>Dr. Mia Minnes</h3>
+						<p>Welcome to UC San Diego! Come by my office on the fourth floor
+							and check out colourful whiteboard markers, cool origami, and a view of our
+							CSE Stone Bear mascot.
+						</p>
+					</bio>
+				</teammember>
 
-			<teammember class="col-lg-6">
-				<img src="images/team/Katherine Charry.jpg" alt="" aria-label="profile picture of Kathy"></img>
-				<bio>
-					<h3>Kathy Charry</h3>
-					<p>Hi everyone! My name is Kathy, and I'm a second-year Computer Science student at Warren. I was a PACE student myself last year, and I'm so excited to be your Lead Peer Mentor this year! A little about me: I love playing volleyball, traveling, and going to the beach. I'm also a Logistics Lead for ACM Outreach and an active member of WIC. I can't wait to meet you all, please feel free to reach out with any questions or even just to chat! :)
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">
-				<img src="images/team/Chen.Mia.jpg" alt="" aria-label="profile picture of Mia"></img>
-				<bio>
-					<h3>Mia Chen</h3>
-					<p>Hello! I'm Mia, a 3rd-year Computer Science major in Sixth College and a returning LPM. I love to eat, travel, and do outdoor activities. Super excited for another fun year with PACE and feel free to reach out with any questions! 
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">
-				<img src="images/team/Nikitha.2025.jpg" alt="" aria-label="profile picture of Nikitha"></img>
-				<bio>
-					<h3>Nikitha Maderamitla</h3>
-					<p>Hi there! I'm Nikitha, a third-year CS major in Sixth. When I'm not in class or coding for soccer-playing robots, you'll find me getting involved with clubs like CSES and WIC, enjoying some time dancing, finding good food, spending time outdoors, or catching a good stand-up show. I was a PACE student myself during my first year, and I am so excited to return as your Lead Peer Mentor this year! Feel free to reach out with any questions or if you just want to chat :)
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">
-				<img src="images/team/RyanBatubara.jpeg" alt="" aria-label="profile picture of Ryan B"></img>
-				<bio>
-					<h3>Ryan Batubara</h3>
-					<p>Hello, I'm Ryan, a fourth year double majoring in Mathematics-Computer Science and Data Science from Indonesia. Having been both a mentee and lead-peer mentor at PACE, I'm excited to continue forming a community here!
-					</p>
-				</bio>
-			</teammember>
+				<teammember tabindex="0">
+					<img src="images/team/JoePolitz.jpg" alt="" aria-label="profile picture of Joe"/>
+					<bio>
+						<h3>Dr. Joe Politz</h3>
+						<p>Hello and welcome! Come visit my office on the third
+							floor to talk about programming, San Diego, and dogs.
+							You can find me posting puns, dog pictures, tech discussion
+							and more on <a
+							href="https://twitter.com/joepolitz">Twitter</a>.
+						</p>
+					</bio>
+				</teammember>
 
-			<teammember class="col-lg-6">
-				<img src="images/team/Sachin.jpeg" alt="" aria-label="profile picture of Sachin"></img>
-				<bio>
-					<h3>Sachin Ramanathan</h3>
-					<p>Hey everyone! I'm Sachin, a third-year Computer Science major at Muir. When I'm not trying to figure out why my code isn't working, I'm probably traveling somewhere new, trying out new food, or hitting the beach. I look forward to getting to know y'all this year :)
-					</p>
-				</bio>
-			</teammember>
+				<teammember tabindex="0">
+					<img src="images/team/KristenVaccaro.png" alt="" aria-label="profile picture of Kristen"/>
+					<bio>
+						<h3>Dr. Kristen Vaccaro</h3>
+						<p>Welcome to UCSD! You can find me on the third floor
+							at the end of the hall (3226, there's also a nice lounge
+							outside) where I'm happy to chat about social computing,
+							UX, and design!
+						</p>
+					</bio>
+				</teammember>
 
-			<teammember class="col-lg-6">
-				<img src="images/team/Sathwika Peechara.jpg" alt="" aria-label="profile picture of Sathwika"></img>
-				<bio>
-					<h3>Sathwika Peechara</h3>
-					<p>Hi!! I'm Sathwika, a second-year CS + Prob and Stats double major at Sixth. I love reading, going on hikes, and hanging out with friends in my free time. Right now, I do research in ECE, and am involved in WIC and CSES. I'm super excited to be an LPM this year and meet you guys! Feel free to reach out to me anytime, I'm always happy to help.
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">
-				<img src="images/team/Yuval Pesok.jpeg" alt="" aria-label="profile picture of Yuval"></img>
-				<bio>
-					<h3>Yuval Pesok</h3>
-					<p>Hi, I'm Yuval Pesok! I'm a computer science student at UCSD who loves building cool projects, learning new tech, and working with others. Excited to be part of CSE PACE and share this journey with you all!
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">
-				<img src="images/team/Ray.Zou.jpg" alt="" aria-label="profile picture of Ray"/></img>
-				<bio>
-					<h3>Ray Zou</h3>
-					<p>Hi everyone! I'm Ray, a second-year Master's student in CSE and the TA for CSE PACE. I love building intelligent systems and tools that empower humans, and I'm always up for a cool project. Outside of school, you'll usually find me experimenting in the kitchen or following motorsport news (especially F1 and WRC). If you ever want to chat about projects, food, or racing, feel free to reach out!
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">									
-				<img src="images/team/JoePolitz.jpg" alt="" aria-label="profile picture of Joe"/></img>
-				<bio>
-					<h3>Dr. Joe Politz</h3>
-					<p>Hello and welcome! Come visit my office on the third
-						floor to talk about programming, San Diego, and dogs.
-						You can find me posting puns, dog pictures, tech discussion
-						and more on <a
-						href="https://twitter.com/joepolitz">Twitter</a>.
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">
-				<img src="images/team/KristenVaccaro.png" alt="" aria-label="profile picture of Kristen"/></img>
-				<bio>
-					<h3>Dr. Kristen Vaccaro</h3>
-					<p>Welcome to UCSD! You can find me on the third floor 
-						at the end of the hall (3226, there's also a nice lounge 
-						outside) where I'm happy to chat about social computing,
-						UX, and design!
-					</p>
-				</bio>
-			</teammember>
-			
-			<teammember class="col-lg-6">
-				<img src="images/team/MiaMinnes.jpg" alt="" aria-label="profile picture of Mia"/></img>
-				<bio>
-					<h3>Dr. Mia Minnes</h3>
-					<p>Welcome to UC San Diego! Come by my office on the fourth floor 
-						and check out colourful whiteboard markers, cool origami, and a view of our
-						CSE Stone Bear mascot.</output>
-					</p>
-				</bio>
-			</teammember>
+
+
+				<teammember tabindex="0">
+					<img src="images/team/Ray.Zou.jpg" alt="" aria-label="profile picture of Ray"/>
+					<bio>
+						<h3>Ray Zou</h3>
+						<p>Hi everyone! I'm Ray, a second-year Master's student in CSE and the TA for CSE PACE. I love building intelligent systems and tools that empower humans, and I'm always up for a cool project. Outside of school, you'll usually find me experimenting in the kitchen or following motorsport news (especially F1 and WRC). If you ever want to chat about projects, food, or racing, feel free to reach out!
+						</p>
+					</bio>
+				</teammember>
+			</team-section>
+
+			<team-section>
+				<h2>Lead Peer Mentors</h2>
+
+				<teammember tabindex="0">
+					<img src="images/team/profile_ali.png" alt="" aria-label="profile picture of Ali"/>
+					<bio>
+						<h3>Ali El Lahib</h3>
+						<p>Hi! I'm Ali and I'm a 4th year majoring in Computer Science at Revelle College! Within CS, I'm very interested in Artificial Intelligence and Robotics. I have also been exploring philosophy, so sometimes you'll find me at UCSD's Philosophy Club! Feel free to reach out if you have any questions!
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/Chernova.png" alt="" aria-label="profile picture of Anya"/>
+					<bio>
+						<h3>Anya Chernova</h3>
+						<p>My name is Anya, and I'm a fourth year Computer Science major. I enjoy exploring different areas of Computer Science to understand what I am most passionate about. My hobbies are drawing, snowboarding and swimming. In addition, I'm always excited to try out new activities whenever I get a chance. I am very happy to be your mentor and am really looking forward to meeting you! Please don't hesitate to reach out if you have any questions or just want to chat!
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/Brendan Barber.jpg" alt="" aria-label="profile picture of Brendan"/>
+					<bio>
+						<h3>Brendan Barber</h3>
+						<p>Hello! I'm Brendan, a second-year CS major in Seventh College. When I'm not coding, you'll find me practicing violin, playing hockey, or rock climbing. And when I'm too tired for those things, I'll probably be lost in a good book, whether it's historical non-fiction, fantasy, or sci-fi.
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/Dante SPIS Photo Headshot.jpg" alt="" aria-label="profile picture of D'ante"/>
+					<bio>
+						<h3>D'ante McCurty</h3>
+						<p>Hi my name is D'ante McCurty and I am a fourth year Computer Science major. I love everything pop culture as well as meeting new people. My favorite hobbies are playing video games and playing board games with my friends.
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/Gonzalo_Ocean_Vacation.png" alt="" aria-label="profile picture of Gonzalo"/>
+					<bio>
+						<h3>Gonzalo Allen-Perez</h3>
+						<p>Hi there and welcome to PACE! I'm Gonzalo and I'm a 4th year CS major (and 2nd time PACE LPM). I'm really into dancing, tennis, reading, watching movies, and playing guitar. I'm always down for a chat at PACE or anywhere else on campus, so don't hesitate to reach out! Looking forward to another great year :)
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/JoshuaVillanueva.jpg" alt="" aria-label="profile picture of Joshua"/>
+					<bio>
+						<h3>Joshua Villanueva</h3>
+						<p>Hello incoming students and welcome to PACE! My name is Joshua Villanueva and I am a low income, first generation, Computer Engineering student. I am happy and thankful to be a part of our UCSD family. Fun fact: A side hobby of mine is making music and when I am not doing that, I like to bury my head in a book, go on a fun hike, or go out to a concert with my friends.
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/Katherine Charry.jpg" alt="" aria-label="profile picture of Kathy"/>
+					<bio>
+						<h3>Kathy Charry</h3>
+						<p>Hi everyone! My name is Kathy, and I'm a second-year Computer Science student at Warren. I was a PACE student myself last year, and I'm so excited to be your Lead Peer Mentor this year! A little about me: I love playing volleyball, traveling, and going to the beach. I'm also a Logistics Lead for ACM Outreach and an active member of WIC. I can't wait to meet you all, please feel free to reach out with any questions or even just to chat! :)
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/Chen.Mia.jpg" alt="" aria-label="profile picture of Mia"/>
+					<bio>
+						<h3>Mia Chen</h3>
+						<p>Hello! I'm Mia, a 3rd-year Computer Science major in Sixth College and a returning LPM. I love to eat, travel, and do outdoor activities. Super excited for another fun year with PACE and feel free to reach out with any questions!
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/Nikitha.2025.jpg" alt="" aria-label="profile picture of Nikitha"/>
+					<bio>
+						<h3>Nikitha Maderamitla</h3>
+						<p>Hi there! I'm Nikitha, a third-year CS major in Sixth. When I'm not in class or coding for soccer-playing robots, you'll find me getting involved with clubs like CSES and WIC, enjoying some time dancing, finding good food, spending time outdoors, or catching a good stand-up show. I was a PACE student myself during my first year, and I am so excited to return as your Lead Peer Mentor this year! Feel free to reach out with any questions or if you just want to chat :)
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/RyanBatubara.jpeg" alt="" aria-label="profile picture of Ryan B"/>
+					<bio>
+						<h3>Ryan Batubara</h3>
+						<p>Hello, I'm Ryan, a fourth year double majoring in Mathematics-Computer Science and Data Science from Indonesia. Having been both a mentee and lead-peer mentor at PACE, I'm excited to continue forming a community here!
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/Sachin.jpeg" alt="" aria-label="profile picture of Sachin"/>
+					<bio>
+						<h3>Sachin Ramanathan</h3>
+						<p>Hey everyone! I'm Sachin, a third-year Computer Science major at Muir. When I'm not trying to figure out why my code isn't working, I'm probably traveling somewhere new, trying out new food, or hitting the beach. I look forward to getting to know y'all this year :)
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/Sathwika Peechara.jpg" alt="" aria-label="profile picture of Sathwika"/>
+					<bio>
+						<h3>Sathwika Peechara</h3>
+						<p>Hi!! I'm Sathwika, a second-year CS + Prob and Stats double major at Sixth. I love reading, going on hikes, and hanging out with friends in my free time. Right now, I do research in ECE, and am involved in WIC and CSES. I'm super excited to be an LPM this year and meet you guys! Feel free to reach out to me anytime, I'm always happy to help.
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember tabindex="0">
+					<img src="images/team/Yuval Pesok.jpeg" alt="" aria-label="profile picture of Yuval"/>
+					<bio>
+						<h3>Yuval Pesok</h3>
+						<p>Hi, I'm Yuval Pesok! I'm a computer science student at UCSD who loves building cool projects, learning new tech, and working with others. Excited to be part of CSE PACE and share this journey with you all!
+						</p>
+					</bio>
+				</teammember>
+			</team-section>
 		</div>
 		
 		<!--Sample discussion topics-->
