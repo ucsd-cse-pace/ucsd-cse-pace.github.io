@@ -38,7 +38,7 @@ body {
 	width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 	body {
 		max-width: 80%;
 		margin-left: auto;
@@ -156,7 +156,7 @@ header nav a:hover {
 	color: black;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 /* Shorten name for small viewports*/
 header .cse-cohorts {
 	/* display: none; */
@@ -375,9 +375,9 @@ team-section {
 
 .directions-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	grid-template-columns: 1fr;
 	gap: 16px;
-	width: 60%;
+	width: 80%;
 	margin: 8px auto;
 }
 
@@ -387,15 +387,10 @@ team-section {
 	border-radius: 8px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
 	.directions-grid {
-		width: 70%;
-	}
-}
-
-@media screen and (min-width: 1088px) {
-	.directions-grid {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		width: 65%;
 	}
 }
 
