@@ -3,7 +3,7 @@
 	--uc-blue: #00629B;
 	--uc-gold: #FFCD00;
 	--uc-orange: #FC8900;
-	--uc-grey: #B6B1A9;
+	--uc-grey: #383838;
 	--uc-grey-dark: #171717;
 	--pace-orange-bg: #fcfbf9;
 	--pace-orange-font: #FF6E1B;
@@ -64,7 +64,7 @@ banner h1 {
 	font-weight: 700;
 	text-align: left;
 	color: var(--pace-orange-font);
-	padding: 8px 0px 16px 0px;
+	padding: 8px 0px 8px 0px;
 }
 
 h2 {
@@ -83,7 +83,7 @@ h3 {
 p {
 	margin: 8px 0 8px 0;
 	text-align: left;
-	line-height: 1.5;
+	line-height: 1.2;
 	font-size: medium;
 	color: var(--uc-grey-dark);
 }
@@ -228,7 +228,7 @@ banner > div {
 } */
 
 
-banner p, .section-title {
+banner h2, .section-title {
 	font-size: x-large;
 	line-height: 1;
 	font-weight: 600;
@@ -239,7 +239,7 @@ banner p, .section-title {
 
 banner div > p {
 	font-size: medium;
-	line-height: 1.4;
+	line-height: 1.2;
 	color: var(--uc-grey-dark);
 	text-decoration: none;
 	margin-bottom: 8px;
@@ -273,7 +273,7 @@ banner div > ul li {
 	padding: 12px 14px;
 	margin-bottom: 12px;
 	font-size: medium;
-	line-height: 1.5;
+	line-height: 1.2;
 	color: var(--uc-grey-dark);
 }
 
@@ -283,6 +283,7 @@ banner div > ul li {
 	flex-shrink: 0;
 	margin-top: 1px;
 }
+
 info {
 	display: block;
 	width: 100%;
@@ -290,8 +291,8 @@ info {
 
 info span.lead-in {
 	color: var(--uc-blue);
-	font-size: clamp(var(--large-mobile),var(--large-multiplier),var(--large-computer));
-	font-weight: 600;
+	font-size: medium;
+	font-weight: 500;
 }
 
 info ul {
@@ -305,14 +306,14 @@ info dl {
 
 info dt {
 	color: var(--pace-orange-font);
-	font-weight: bolder;
+	/* font-weight: bolder; */
 	padding-top: 10px;
 	padding-bottom: 0px;
 }
 
 info a{
 	color: var(--uc-blue);
-	font-weight: bolder;
+	/* font-weight: bolder; */
 }
 
 
@@ -333,7 +334,7 @@ topics {
 
 topics dt {
 	color: var(--pace-orange-font);
-	font-weight: bolder;
+	/* font-weight: bolder; */
 	padding-top:10px;
 	padding-bottom: 10px;
 }
@@ -440,9 +441,9 @@ teammember bio h3 {
 teammember bio p {
 	margin: 8px 0 0 0;
 	text-align: left;
-	line-height: 1.5;
+	line-height: 1.2;
 	font-size: medium;
-	color: var(--uc-grey-dark);
+	color: var(--uc-grey);
 }
 
 /* Media */
@@ -512,5 +513,80 @@ video {
 	background-color: var(--uc-blue);
 	border-color: var(--uc-blue);
 	box-shadow: 0 0 6px rgba(0, 98, 155, 0.5);
+}
+
+/* Bootstrap card overrides for consistency with main page design */
+.card {
+	background: #f8f8f8;
+	border: none;
+	border-radius: 12px;
+}
+
+.card.box-shadow {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card strong.text-primary {
+	color: var(--pace-orange-font) !important;
+	font-weight: 700;
+	font-size: large;
+}
+
+.card p.text-dark {
+	color: var(--uc-grey-dark);
+	font-size: medium;
+	line-height: 1.2;
+}
+
+/* Dashboard grid for external page cards */
+.dash-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 16px;
+	width: 100%;
+	margin: 8px 0;
+}
+
+@media screen and (min-width: 1088px) {
+	.dash-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.dash-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 16px;
+	text-align: center;
+	justify-content: center;
+
+}
+
+.dash-card i.fa {
+	font-size: large;
+	/* color: var(--pace-orange-font); */
+	margin-right: 4px;
+	margin-bottom: 0;
+	width: auto;
+}
+
+.dash-card h3 {
+	color: var(--uc-blue);
+	font-weight: bolder;
+	font-size: large;
+	margin: 8px 0 0 0;
+}
+
+.dash-card p {
+	text-align: left;
+}
+
+.dash-number {
+	font-size: xx-large;
+	font-weight: 600;
+	color: var(--pace-orange-font);
+	line-height: 1;
+	margin: 4px 0 0 0;
 }
 
