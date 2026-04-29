@@ -9,7 +9,7 @@
 	<!-- Stylesheet for Bootsrap, fonts, and social media site icons, loaded asynchronously -->
 	<link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"   type="text/css" rel="preload" as="style">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" rel="preload" as="style">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" type="text/css" rel="preload" as="style">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" type="text/css" rel="preload" as="style">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="preload" as="style">
 	
 	<!-- PACE Stylesheet, loaded asynchronously -->
@@ -19,40 +19,133 @@
 <body>
 	<div class="container-fluid main-content">
 		<!--Header is PACE logo on left and quick links on right-->
-		<header class="row no-gutters align-items-center justify-content-between position-sticky flex-nowrap">
-			<h1 class="col-8">
-				<img src="images/logo/Logo-plain.png"/>
-				<span alt="PACE CSE Cohorts" tabindex="1" class="cse-cohorts">CSE-PACE Cohorts</span>
-			</h1>	
-			<div class="col-4 flex-nowrap">
-				<button>
-					<a href="https://www.instagram.com/paceucsd" class="fa fa-instagram" aria-label="Instagram link" title="Follow PACE on Instagram" alt="PACE on Instagram"></a>
-				</button>
-				<button>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSeL1-IsamYi_UeIBkDtozQFHk-VExRdb-kzifXFjspWgA26Yg/viewform"  aria-label="Registration form link" title="Use this form to register">Register</a>
-				</button>
-			</div>
+		<header class="row no-gutters align-items-center position-sticky flex-nowrap">
+			<h1>
+				<img src="images/logo/logo-banner.png"/>
+				<!-- <span alt="PACE CSE Cohorts" tabindex="1" class="cse-cohorts">CSE-PACE Cohorts</span> -->
+			</h1>
+			<nav class="flex-nowrap">
+				<a href="#learn-more">What's PACE?</a>
+				<a href="#updates">Latest Updates</a>
+				<a href="#team">Our Team</a>
+				<a href="#topics">Topics</a>
+				<a href="#handbook">Handbook</a>
+				<a href="external/index.html" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i> Grow PACE (External Resources)</a>
+			</nav>
 		</header>
 		
 		<!--Banner is picture plus title and session times-->
-		<banner class="row no-gutters">
-			<left alt="A banner image of students sitting talking and smiling." class="col-lg-6 no-gutters row justify-content-around align-content-center bannerimage">
-			</left>
-			<div tabindex="3" class="col-lg-6 no-gutters row justify-content-around align-content-center">
-				<dl>
-					<dt>CSE Peer-led Academic Cohort Experiences</dt>
-					<dd>Computing undergraduates new to campus in AY25-26, </dd>
-					<dd><em>plan to attend one of the following in Spring 2026</em>:</dd>
-					<dd>Thursdays 1:00PM - 2:20PM &nbsp; <em>or</em></dd>
-					<dd>Fridays 1:00PM - 2:20PM </dd>
-					<dd>Both are in the CSE Building,</dd>
-					<dd>room CSE 1202, on the first floor.</dd>
-				</dl>
+		<banner class="row">
+
+			<div tabindex="3" class="col-lg-8 no-gutters">
+				<h1>CSE Peer-led Academic Cohort Experiences</h1>
+				<p>CSE-PACE (also CSE89 for 2 credits) is a year-long program where first-year computing undergraduates (both CSE and non-CSE) gather. Guided by upper-level lead peer mentors (LPMs), you will:</p>
+					<ul>
+						<li>Connect with new friends</li>
+						<li>Think about big ideas in computing over free food</li>
+						<li>Get insider tips on classes and campus</li>
+					</ul>
+				<div class="schedule-box">
+					<i class="fa fa-info-circle" aria-hidden="true"></i>
+					<div>
+						We welcome you to PACE this Spring 2026 quarter at one of the two times:
+						<ul>
+							<li>Thursday 1:00PM - 2:20PM</li>
+							<li>Friday 1:00PM - 2:20PM</li>
+						</ul>
+						Both are in the CSE Building (on <a href="https://www.google.com/maps/place/Computer+Science+and+Engineering+Building/@32.8817606,-117.2334519,20.33z/data=!4m5!3m4!1s0x0:0xa7dc3be7597d4d47!8m2!3d32.8818006!4d-117.2335235?shorturl=1" target="_blank" rel="noopener noreferrer">[Google Maps]</a> <a href="https://map.concept3d.com/?id=1005#!m/246305?s/" target="_blank" rel="noopener noreferrer">[UCSD Maps]</a>), room CSE 1202, on the first floor.
+
+						Register ahead, or simply show up during cohort time! <a href="https://docs.google.com/forms/d/e/1FAIpQLSeL1-IsamYi_UeIBkDtozQFHk-VExRdb-kzifXFjspWgA26Yg/viewform" aria-label="Registration form link" target="_blank" rel="noopener noreferrer">Register here</a>.
+					</div>
+				</div>
 			</div>
+
+			<div class="col-lg-4 no-gutters d-flex justify-content-center">
+
+				<div id="photo-carousel" class="carousel slide" data-ride="carousel">
+
+					<div class="carousel-indicators">
+						<button type="button" data-target="#photo-carousel" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="3" aria-label="Slide 4"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="4" aria-label="Slide 5"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="5" aria-label="Slide 6"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="6" aria-label="Slide 7"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="7" aria-label="Slide 8"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="8" aria-label="Slide 9"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="9" aria-label="Slide 10"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="10" aria-label="Slide 11"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="11" aria-label="Slide 12"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="12" aria-label="Slide 13"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="13" aria-label="Slide 14"></button>
+						<button type="button" data-target="#photo-carousel" data-slide-to="14" aria-label="Slide 15"></button>
+					</div>
+
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="images/W10_3.jpg" alt="Students sitting talking and smiling" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/23-24-pics/warren-bear.jpg" alt="First slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/23-24-pics/fall-peter-karisma.jpg" alt="Second slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/Slideshow-pics/W10_6.jpg" alt="Third slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/23-24-pics/utc_lpm_social.jpg" alt="Fourth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/Slideshow-pics/PACE22.JPG" alt="Fifth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/23-24-pics/ryan_yuan.jpg" alt="Sixth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/23-24-pics/lunch1.jpg" alt="Seventh slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/Slideshow-pics/pace22lunch.jpeg" alt="Eighth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/Slideshow-pics/pacelunch2.jpeg" alt="Ninth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/23-24-pics/lunch2.jpg" alt="Tenth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/Slideshow-pics/W10_5.jpg" alt="Eleventh slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/Slideshow-pics/7.jpg" alt="Twelfth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/Slideshow-pics/W10_1.jpg" alt="Thirteenth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+						<div class="carousel-item">
+							<img src="images/Slideshow-pics/W10_2.jpg" alt="Fourteenth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
 		</banner>
+
+		
+		<div class="directions-grid">
+			<img src="images/directions-1.png" alt="Directions step 1">
+			<img src="images/directions-2.png" alt="Directions step 2">
+			<img src="images/directions-3.png" alt="Directions step 3">
+			<img src="images/directions-4.png" alt="Directions step 4">
+		</div>
 		
 		<!--Info is quick overview and call-to-action buttons-->
-		<info class="row justify-content-around">
+		<!-- <info class="row justify-content-around">
 			<div tabindex="2" class="col-lg-6">
 				<span class="lead-in">In CSE-PACE Cohorts you will...</span>
 				<ul>
@@ -67,97 +160,16 @@
 					<a href="#handbook"><button class="col-12">PACE<br>Handbook</button></a>
 				</calltoaction>
 			</div>
-		</info>
-		
-		<!--Photo carousel-->
-		<div class="row no-gutters justify-content-around align-content-center">
-			
-			<div id="photo-carousel" class="carousel slide" data-ride="carousel">
-				
-				<div class="carousel-indicators">
-					<button type="button" data-target="#photo-carousel" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="2" aria-label="Slide 3"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="3" aria-label="Slide 4"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="4" aria-label="Slide 5"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="5" aria-label="Slide 6"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="6" aria-label="Slide 7"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="7" aria-label="Slide 8"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="8" aria-label="Slide 9"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="9" aria-label="Slide 10"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="10" aria-label="Slide 11"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="11" aria-label="Slide 12"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="12" aria-label="Slide 13"></button>
-					<button type="button" data-target="#photo-carousel" data-slide-to="13" aria-label="Slide 14"></button>
-					
-					<a class="carousel-control-prev" href="#photo-carousel" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#photo-carousel" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-				
-				<div class="carousel-inner">
-					
-					
-					
-					<div class="carousel-item active">
-						<img src="images/23-24-pics/warren-bear.jpg" alt="First slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/23-24-pics/fall-peter-karisma.jpg" alt="Second slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/Slideshow-pics/W10_6.jpg" alt="Third slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/23-24-pics/utc_lpm_social.jpg" alt="Fourth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/Slideshow-pics/PACE22.JPG" alt="Fifth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/23-24-pics/ryan_yuan.jpg" alt="Sixth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/23-24-pics/lunch1.jpg" alt="Seventh slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/Slideshow-pics/pace22lunch.jpeg" alt="Eighth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/Slideshow-pics/pacelunch2.jpeg" alt="Ninth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/23-24-pics/lunch2.jpg" alt="Tenth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/Slideshow-pics/W10_5.jpg" alt="Eleventh slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/Slideshow-pics/7.jpg" alt="Twelfth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/Slideshow-pics/W10_1.jpg" alt="Thirteenth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-					<div class="carousel-item">
-						<img src="images/Slideshow-pics/W10_2.jpg" alt="Fourteenth slide"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-					</div>
-				</div>
-				
-			</div>
-			
-		</div>
-		
+		</info> 
+		-->
+
 		<!--Frequently asked questions-->
-		<a name="learn-more"></a>
+		
 		<div class="row no-gutters justify-content-around  align-content-center">
-			<banner><p>What are Peer-led Academic Cohort Experiences?</p></banner>
+			<a name="learn-more"></a>
+			<h2 class="section-title">What are Peer-led Academic Cohort Experiences (or PACE)?</h2>
 			
-			<info class="col-lg-10">
+			<info>
 				
 				<p>
 					Join our weekly sessions to talk about CSE courses
@@ -166,7 +178,7 @@
 					students, and runs for the entire academic year.
 					Earn 2 units of credit each quarter for participation by 
 					enrolling in CSE 89: Intro to CSE Seminar.
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSeL1-IsamYi_UeIBkDtozQFHk-VExRdb-kzifXFjspWgA26Yg/viewform">Register first</a> to help us make
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSeL1-IsamYi_UeIBkDtozQFHk-VExRdb-kzifXFjspWgA26Yg/viewform" target="_blank" rel="noopener noreferrer">Register first</a> to help us make
 					groups ahead of time. You can also just show up
 					during cohort time during the first few weeks of
 					the quarter, and we'll help you get started!
@@ -206,32 +218,144 @@
 			</info>
 			
 		</div>
-		
-		<!--Directions to CSE-->
-		<a name="directions"></a>
-		<div class="row no-gutters justify-content-around">
 
-			<calltoaction tabindex="6" class="row no-gutters align-items-center justify-content-center">
-				<p>CSE Building on </p>
-				
-				<a href="https://map.concept3d.com/?id=1005#!m/246305"><button>UCSD Maps</button></a>
-				<a href="https://goo.gl/maps/6p1Bqs98CcWGaGyU7"><button>Google Maps</button></a>
-				
-			</calltoaction>
-		</div>
 		<div class="row no-gutters justify-content-center">
-			<img style="max-width: 300px;"src="images/directions-1202.png"></img>
+			<a name="updates"></a>
+			<h2 class="section-title">Latest Updates</h2>
+			<info><p>Follow us on Instagram for the latest updates on PACE events, photos, and more!</p></info>
+			<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/paceucsd/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/paceucsd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/paceucsd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">CSE-PACE</a> (@<a href="https://www.instagram.com/paceucsd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">paceucsd</a>) • Instagram photos and videos</p></div></blockquote>
 		</div>
+		
+
 		
 		<!--Leadership team-->
 		<a name="team"></a>
-		<div class="row no-gutters justify-content-around">
-			<banner><p>CSE-PACE Team</p></banner>
+		<div class="row no-gutters justify-content-left">
+			<h2 class="section-title">CSE-PACE Team</h2>
 
+			<h3>Lead Peer Mentors (LPMs)</h3>
 			<team-section>
-				<h2>Leadership</h2>
+				<teammember>
+					<img src="images/team/profile_ali.png" alt="" aria-label="profile picture of Ali"/>
+					<bio>
+						<h3>Ali El Lahib</h3>
+						<p>Hi! I'm Ali and I'm a 4th year majoring in Computer Science at Revelle College! Within CS, I'm very interested in Artificial Intelligence and Robotics. I have also been exploring philosophy, so sometimes you'll find me at UCSD's Philosophy Club! Feel free to reach out if you have any questions!
+						</p>
+					</bio>
+				</teammember>
 
-				<teammember tabindex="0">
+				<teammember>
+					<img src="images/team/Chernova.png" alt="" aria-label="profile picture of Anya"/>
+					<bio>
+						<h3>Anya Chernova</h3>
+						<p>My name is Anya, and I'm a fourth year Computer Science major. I enjoy exploring different areas of Computer Science to understand what I am most passionate about. My hobbies are drawing, snowboarding and swimming. In addition, I'm always excited to try out new activities whenever I get a chance. I am very happy to be your mentor and am really looking forward to meeting you! Please don't hesitate to reach out if you have any questions or just want to chat!
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/Brendan Barber.jpg" alt="" aria-label="profile picture of Brendan"/>
+					<bio>
+						<h3>Brendan Barber</h3>
+						<p>Hello! I'm Brendan, a second-year CS major in Seventh College. When I'm not coding, you'll find me practicing violin, playing hockey, or rock climbing. And when I'm too tired for those things, I'll probably be lost in a good book, whether it's historical non-fiction, fantasy, or sci-fi.
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/Dante SPIS Photo Headshot.jpg" alt="" aria-label="profile picture of D'ante"/>
+					<bio>
+						<h3>D'ante McCurty</h3>
+						<p>Hi my name is D'ante McCurty and I am a fourth year Computer Science major. I love everything pop culture as well as meeting new people. My favorite hobbies are playing video games and playing board games with my friends.
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/Gonzalo_Ocean_Vacation.png" alt="" aria-label="profile picture of Gonzalo"/>
+					<bio>
+						<h3>Gonzalo Allen-Perez</h3>
+						<p>Hi there and welcome to PACE! I'm Gonzalo and I'm a 4th year CS major (and 2nd time PACE LPM). I'm really into dancing, tennis, reading, watching movies, and playing guitar. I'm always down for a chat at PACE or anywhere else on campus, so don't hesitate to reach out! Looking forward to another great year :)
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/JoshuaVillanueva.jpg" alt="" aria-label="profile picture of Joshua"/>
+					<bio>
+						<h3>Joshua Villanueva</h3>
+						<p>Hello incoming students and welcome to PACE! My name is Joshua Villanueva and I am a low income, first generation, Computer Engineering student. I am happy and thankful to be a part of our UCSD family. Fun fact: A side hobby of mine is making music and when I am not doing that, I like to bury my head in a book, go on a fun hike, or go out to a concert with my friends.
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/Katherine Charry.jpg" alt="" aria-label="profile picture of Kathy"/>
+					<bio>
+						<h3>Kathy Charry</h3>
+						<p>Hi everyone! My name is Kathy, and I'm a second-year Computer Science student at Warren. I was a PACE student myself last year, and I'm so excited to be your Lead Peer Mentor this year! A little about me: I love playing volleyball, traveling, and going to the beach. I'm also a Logistics Lead for ACM Outreach and an active member of WIC. I can't wait to meet you all, please feel free to reach out with any questions or even just to chat! :)
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/Chen.Mia.jpg" alt="" aria-label="profile picture of Mia"/>
+					<bio>
+						<h3>Mia Chen</h3>
+						<p>Hello! I'm Mia, a 3rd-year Computer Science major in Sixth College and a returning LPM. I love to eat, travel, and do outdoor activities. Super excited for another fun year with PACE and feel free to reach out with any questions!
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/Nikitha.2025.jpg" alt="" aria-label="profile picture of Nikitha"/>
+					<bio>
+						<h3>Nikitha Maderamitla</h3>
+						<p>Hi there! I'm Nikitha, a third-year CS major in Sixth. When I'm not in class or coding for soccer-playing robots, you'll find me getting involved with clubs like CSES and WIC, enjoying some time dancing, finding good food, spending time outdoors, or catching a good stand-up show. I was a PACE student myself during my first year, and I am so excited to return as your Lead Peer Mentor this year! Feel free to reach out with any questions or if you just want to chat :)
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/RyanBatubara.jpeg" alt="" aria-label="profile picture of Ryan B"/>
+					<bio>
+						<h3>Ryan Batubara</h3>
+						<p>Hello, I'm Ryan, a fourth year double majoring in Mathematics-Computer Science and Data Science from Indonesia. Having been both a mentee and lead-peer mentor at PACE, I'm excited to continue forming a community here!
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/Sachin.jpeg" alt="" aria-label="profile picture of Sachin"/>
+					<bio>
+						<h3>Sachin Ramanathan</h3>
+						<p>Hey everyone! I'm Sachin, a third-year Computer Science major at Muir. When I'm not trying to figure out why my code isn't working, I'm probably traveling somewhere new, trying out new food, or hitting the beach. I look forward to getting to know y'all this year :)
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/Sathwika Peechara.jpg" alt="" aria-label="profile picture of Sathwika"/>
+					<bio>
+						<h3>Sathwika Peechara</h3>
+						<p>Hi!! I'm Sathwika, a second-year CS + Prob and Stats double major at Sixth. I love reading, going on hikes, and hanging out with friends in my free time. Right now, I do research in ECE, and am involved in WIC and CSES. I'm super excited to be an LPM this year and meet you guys! Feel free to reach out to me anytime, I'm always happy to help.
+						</p>
+					</bio>
+				</teammember>
+
+				<teammember>
+					<img src="images/team/Yuval Pesok.jpeg" alt="" aria-label="profile picture of Yuval"/>
+					<bio>
+						<h3>Yuval Pesok</h3>
+						<p>Hi, I'm Yuval Pesok! I'm a computer science student at UCSD who loves building cool projects, learning new tech, and working with others. Excited to be part of CSE PACE and share this journey with you all!
+						</p>
+					</bio>
+				</teammember>
+			</team-section>
+			
+			<h3>Faculty and Teaching Assistant(s)</h3>		
+			<team-section>
+				<teammember>
 					<img src="images/team/MiaMinnes.jpg" alt="" aria-label="profile picture of Mia"/>
 					<bio>
 						<h3>Dr. Mia Minnes</h3>
@@ -242,7 +366,7 @@
 					</bio>
 				</teammember>
 
-				<teammember tabindex="0">
+				<teammember>
 					<img src="images/team/JoePolitz.jpg" alt="" aria-label="profile picture of Joe"/>
 					<bio>
 						<h3>Dr. Joe Politz</h3>
@@ -250,12 +374,12 @@
 							floor to talk about programming, San Diego, and dogs.
 							You can find me posting puns, dog pictures, tech discussion
 							and more on <a
-							href="https://twitter.com/joepolitz">Twitter</a>.
+							href="https://twitter.com/joepolitz" target="_blank" rel="noopener noreferrer">Twitter</a>.
 						</p>
 					</bio>
 				</teammember>
 
-				<teammember tabindex="0">
+				<teammember>
 					<img src="images/team/KristenVaccaro.png" alt="" aria-label="profile picture of Kristen"/>
 					<bio>
 						<h3>Dr. Kristen Vaccaro</h3>
@@ -267,134 +391,11 @@
 					</bio>
 				</teammember>
 
-
-
-				<teammember tabindex="0">
+				<teammember>
 					<img src="images/team/Ray.Zou.jpg" alt="" aria-label="profile picture of Ray"/>
 					<bio>
 						<h3>Ray Zou</h3>
 						<p>Hi everyone! I'm Ray, a second-year Master's student in CSE and the TA for CSE PACE. I love building intelligent systems and tools that empower humans, and I'm always up for a cool project. Outside of school, you'll usually find me experimenting in the kitchen or following motorsport news (especially F1 and WRC). If you ever want to chat about projects, food, or racing, feel free to reach out!
-						</p>
-					</bio>
-				</teammember>
-			</team-section>
-
-			<team-section>
-				<h2>Lead Peer Mentors</h2>
-
-				<teammember tabindex="0">
-					<img src="images/team/profile_ali.png" alt="" aria-label="profile picture of Ali"/>
-					<bio>
-						<h3>Ali El Lahib</h3>
-						<p>Hi! I'm Ali and I'm a 4th year majoring in Computer Science at Revelle College! Within CS, I'm very interested in Artificial Intelligence and Robotics. I have also been exploring philosophy, so sometimes you'll find me at UCSD's Philosophy Club! Feel free to reach out if you have any questions!
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/Chernova.png" alt="" aria-label="profile picture of Anya"/>
-					<bio>
-						<h3>Anya Chernova</h3>
-						<p>My name is Anya, and I'm a fourth year Computer Science major. I enjoy exploring different areas of Computer Science to understand what I am most passionate about. My hobbies are drawing, snowboarding and swimming. In addition, I'm always excited to try out new activities whenever I get a chance. I am very happy to be your mentor and am really looking forward to meeting you! Please don't hesitate to reach out if you have any questions or just want to chat!
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/Brendan Barber.jpg" alt="" aria-label="profile picture of Brendan"/>
-					<bio>
-						<h3>Brendan Barber</h3>
-						<p>Hello! I'm Brendan, a second-year CS major in Seventh College. When I'm not coding, you'll find me practicing violin, playing hockey, or rock climbing. And when I'm too tired for those things, I'll probably be lost in a good book, whether it's historical non-fiction, fantasy, or sci-fi.
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/Dante SPIS Photo Headshot.jpg" alt="" aria-label="profile picture of D'ante"/>
-					<bio>
-						<h3>D'ante McCurty</h3>
-						<p>Hi my name is D'ante McCurty and I am a fourth year Computer Science major. I love everything pop culture as well as meeting new people. My favorite hobbies are playing video games and playing board games with my friends.
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/Gonzalo_Ocean_Vacation.png" alt="" aria-label="profile picture of Gonzalo"/>
-					<bio>
-						<h3>Gonzalo Allen-Perez</h3>
-						<p>Hi there and welcome to PACE! I'm Gonzalo and I'm a 4th year CS major (and 2nd time PACE LPM). I'm really into dancing, tennis, reading, watching movies, and playing guitar. I'm always down for a chat at PACE or anywhere else on campus, so don't hesitate to reach out! Looking forward to another great year :)
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/JoshuaVillanueva.jpg" alt="" aria-label="profile picture of Joshua"/>
-					<bio>
-						<h3>Joshua Villanueva</h3>
-						<p>Hello incoming students and welcome to PACE! My name is Joshua Villanueva and I am a low income, first generation, Computer Engineering student. I am happy and thankful to be a part of our UCSD family. Fun fact: A side hobby of mine is making music and when I am not doing that, I like to bury my head in a book, go on a fun hike, or go out to a concert with my friends.
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/Katherine Charry.jpg" alt="" aria-label="profile picture of Kathy"/>
-					<bio>
-						<h3>Kathy Charry</h3>
-						<p>Hi everyone! My name is Kathy, and I'm a second-year Computer Science student at Warren. I was a PACE student myself last year, and I'm so excited to be your Lead Peer Mentor this year! A little about me: I love playing volleyball, traveling, and going to the beach. I'm also a Logistics Lead for ACM Outreach and an active member of WIC. I can't wait to meet you all, please feel free to reach out with any questions or even just to chat! :)
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/Chen.Mia.jpg" alt="" aria-label="profile picture of Mia"/>
-					<bio>
-						<h3>Mia Chen</h3>
-						<p>Hello! I'm Mia, a 3rd-year Computer Science major in Sixth College and a returning LPM. I love to eat, travel, and do outdoor activities. Super excited for another fun year with PACE and feel free to reach out with any questions!
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/Nikitha.2025.jpg" alt="" aria-label="profile picture of Nikitha"/>
-					<bio>
-						<h3>Nikitha Maderamitla</h3>
-						<p>Hi there! I'm Nikitha, a third-year CS major in Sixth. When I'm not in class or coding for soccer-playing robots, you'll find me getting involved with clubs like CSES and WIC, enjoying some time dancing, finding good food, spending time outdoors, or catching a good stand-up show. I was a PACE student myself during my first year, and I am so excited to return as your Lead Peer Mentor this year! Feel free to reach out with any questions or if you just want to chat :)
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/RyanBatubara.jpeg" alt="" aria-label="profile picture of Ryan B"/>
-					<bio>
-						<h3>Ryan Batubara</h3>
-						<p>Hello, I'm Ryan, a fourth year double majoring in Mathematics-Computer Science and Data Science from Indonesia. Having been both a mentee and lead-peer mentor at PACE, I'm excited to continue forming a community here!
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/Sachin.jpeg" alt="" aria-label="profile picture of Sachin"/>
-					<bio>
-						<h3>Sachin Ramanathan</h3>
-						<p>Hey everyone! I'm Sachin, a third-year Computer Science major at Muir. When I'm not trying to figure out why my code isn't working, I'm probably traveling somewhere new, trying out new food, or hitting the beach. I look forward to getting to know y'all this year :)
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/Sathwika Peechara.jpg" alt="" aria-label="profile picture of Sathwika"/>
-					<bio>
-						<h3>Sathwika Peechara</h3>
-						<p>Hi!! I'm Sathwika, a second-year CS + Prob and Stats double major at Sixth. I love reading, going on hikes, and hanging out with friends in my free time. Right now, I do research in ECE, and am involved in WIC and CSES. I'm super excited to be an LPM this year and meet you guys! Feel free to reach out to me anytime, I'm always happy to help.
-						</p>
-					</bio>
-				</teammember>
-
-				<teammember tabindex="0">
-					<img src="images/team/Yuval Pesok.jpeg" alt="" aria-label="profile picture of Yuval"/>
-					<bio>
-						<h3>Yuval Pesok</h3>
-						<p>Hi, I'm Yuval Pesok! I'm a computer science student at UCSD who loves building cool projects, learning new tech, and working with others. Excited to be part of CSE PACE and share this journey with you all!
 						</p>
 					</bio>
 				</teammember>
@@ -404,9 +405,9 @@
 		<!--Sample discussion topics-->
 		<a name="topics"></a>
 		<div class="row no-gutters justify-content-around">
-			<banner><p>Discussion Starters</p></banner>						
+			<h2 class="section-title">Topics</h2>						
 			
-			<topics class="col-lg-10">
+			<topics>
 				<p>Some CSE-PACE discussions are directly related to your CSE courses, and others draw from news stories or videos about cutting-edge topics in computing. 
 					Here are a few examples of conversation starters for our sessions.
 				</p>
@@ -414,27 +415,27 @@
 					<dt>
 						How is artificial intelligence (mis)used?
 					</dt>
-					<dd><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" 
-						target="_blank">"Machine Bias - There's software used across the country to predict future criminals. And it's biased against blacks." [Magazine article]</a>
+					<dd><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+						target="_blank" rel="noopener noreferrer">"Machine Bias - There's software used across the country to predict future criminals. And it's biased against blacks." [Magazine article]</a>
 					</dd>
 					
-					<dd><a href="https://viterbischool.usc.edu/news/2022/08/busting-anti-queer-bias-in-text-prediction/" 
-						target="_blank">"Busting Anti-Queer Bias in Text Prediction" [USC news story]
+					<dd><a href="https://viterbischool.usc.edu/news/2022/08/busting-anti-queer-bias-in-text-prediction/"
+						target="_blank" rel="noopener noreferrer">"Busting Anti-Queer Bias in Text Prediction" [USC news story]
 					</a></dd>
 					
 					
-					<dd><a href="https://www.ted.com/talks/joy_buolamwini_how_i_m_fighting_bias_in_algorithms?language=en" 
-						target="_blank">"TED Talk: How I'm fighting Bias in Algorithms" [TED Talk]
+					<dd><a href="https://www.ted.com/talks/joy_buolamwini_how_i_m_fighting_bias_in_algorithms?language=en"
+						target="_blank" rel="noopener noreferrer">"TED Talk: How I'm fighting Bias in Algorithms" [TED Talk]
 					</a></dd>
 					
 					
-					<dd><a href="https://jacobsschool.ucsd.edu/news/release/3399" 
-						target="_blank">"COMPUTERS IN A JAZZ ENSEMBLE? INVENTING IMPROVISATIONAL AI" [UCSD news story]
+					<dd><a href="https://jacobsschool.ucsd.edu/news/release/3399"
+						target="_blank" rel="noopener noreferrer">"COMPUTERS IN A JAZZ ENSEMBLE? INVENTING IMPROVISATIONAL AI" [UCSD news story]
 					</a></dd>
 					
 					
-					<dd><a href="https://www.youtube.com/watch?v=PWCtoVt1CJM" 
-						target="_blank">"how to stop Artificial Intelligence from marginalizing communities?" [TEDx talk]
+					<dd><a href="https://www.youtube.com/watch?v=PWCtoVt1CJM"
+						target="_blank" rel="noopener noreferrer">"how to stop Artificial Intelligence from marginalizing communities?" [TEDx talk]
 					</a></dd>
 					
 					
@@ -442,29 +443,29 @@
 					<dt>
 						Can computing destroy / save our planet and our communities?
 					</dt>
-					<dd><a href="https://jacobsschool.ucsd.edu/news/release/3425" 
-						target="_blank">"The power of bugs" [UCSD news story] </a></dd>
+					<dd><a href="https://jacobsschool.ucsd.edu/news/release/3425"
+						target="_blank" rel="noopener noreferrer">"The power of bugs" [UCSD news story] </a></dd>
 						
 						
-						<dd><a href="https://www.youtube.com/watch?v=5JwCLopoBqo&list=PLepHs0thoryOBvH0eWVNxRyxwsujN9Du_&index=19" 
-							target="_blank">"Computing as a teammate in healthcare" [UCSD researcher video profile]
+						<dd><a href="https://www.youtube.com/watch?v=5JwCLopoBqo&list=PLepHs0thoryOBvH0eWVNxRyxwsujN9Du_&index=19"
+							target="_blank" rel="noopener noreferrer">"Computing as a teammate in healthcare" [UCSD researcher video profile]
 						</a></dd>
 						
-						<dd><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi0tYWG6sr5AhVvC0QIHdWuA3oQFnoECBgQAw&url=https%3A%2F%2Fwww.nytimes.com%2F2022%2F07%2F15%2Fclimate%2Fcryptocurrency-bitcoin-mining-electricity.html%23%3A~%3Atext%3DSeven%2520of%2520the%2520largest%2520Bitcoin%2Cto%2520report%2520their%2520energy%2520use.&usg=AOvVaw1gALxzGvu29Zh9S2N0h54h" 
-							target="_blank">"Cryptomining Capacity in U.S. Rivals Energy Use of Houston" [New York Times article]
+						<dd><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi0tYWG6sr5AhVvC0QIHdWuA3oQFnoECBgQAw&url=https%3A%2F%2Fwww.nytimes.com%2F2022%2F07%2F15%2Fclimate%2Fcryptocurrency-bitcoin-mining-electricity.html%23%3A~%3Atext%3DSeven%2520of%2520the%2520largest%2520Bitcoin%2Cto%2520report%2520their%2520energy%2520use.&usg=AOvVaw1gALxzGvu29Zh9S2N0h54h"
+							target="_blank" rel="noopener noreferrer">"Cryptomining Capacity in U.S. Rivals Energy Use of Houston" [New York Times article]
 						</a></dd>
 						
-						<dd><a href="https://www.washingtonpost.com/graphics/business/batteries/tossed-aside-in-the-lithium-rush/?tid%2Dbatteriesseriesbox" 
-							target="_blank">"Tossed aside in the "white gold" rush- indigenous people are left poor as tech world takes lithium from under their feet" [Washington Post article]
+						<dd><a href="https://www.washingtonpost.com/graphics/business/batteries/tossed-aside-in-the-lithium-rush/?tid%2Dbatteriesseriesbox"
+							target="_blank" rel="noopener noreferrer">"Tossed aside in the "white gold" rush- indigenous people are left poor as tech world takes lithium from under their feet" [Washington Post article]
 						</a></dd>
 						
-						<dd><a href="https://ucsdnews.ucsd.edu/pressrelease/Bluetoothfingerprints" 
-							target="_blank">"Bluetooth Signals Can be Used to Identify and Track Smartphones" [UCSD news story]
+						<dd><a href="https://ucsdnews.ucsd.edu/pressrelease/Bluetoothfingerprints"
+							target="_blank" rel="noopener noreferrer">"Bluetooth Signals Can be Used to Identify and Track Smartphones" [UCSD news story]
 						</a></dd>
 						
 						
-						<dd><a href="https://www.youtube.com/watch?v=sixFzCAq-Dc&list=PLepHs0thoryOBvH0eWVNxRyxwsujN9Du_&index=21" 
-							target="_blank">"Improving Internet Security" [UCSD researcher video profile]
+						<dd><a href="https://www.youtube.com/watch?v=sixFzCAq-Dc&list=PLepHs0thoryOBvH0eWVNxRyxwsujN9Du_&index=21"
+							target="_blank" rel="noopener noreferrer">"Improving Internet Security" [UCSD researcher video profile]
 						</a></dd>
 						
 						
@@ -472,35 +473,35 @@
 							What would computing <emph>for all</emph> look like?
 						</dt>
 						
-						<dd><a href="https://www.youtube.com/watch?v=ohXfjysQhx8" 
-							target="_blank">"Why I Want my Voice Assistant to Speak Spanglish" [TEDx Talk]
+						<dd><a href="https://www.youtube.com/watch?v=ohXfjysQhx8"
+							target="_blank" rel="noopener noreferrer">"Why I Want my Voice Assistant to Speak Spanglish" [TEDx Talk]
 						</a></dd>
 						
-						<dd><a href="https://www.nike.com/flyease" 
-							target="_blank">"Nike FlyEase" [Product line feature]
+						<dd><a href="https://www.nike.com/flyease"
+							target="_blank" rel="noopener noreferrer">"Nike FlyEase" [Product line feature]
 						</a></dd>
 						
-						<dd><a href="https://modernfigurespodcast.com/lady-boss-black-tech-founders-episode-006/" 
-							target="_blank">"Lady Boss: Black Tech Founders" [Podcast episode]
+						<dd><a href="https://modernfigurespodcast.com/lady-boss-black-tech-founders-episode-006/"
+							target="_blank" rel="noopener noreferrer">"Lady Boss: Black Tech Founders" [Podcast episode]
 						</a></dd>
 						
-						<dd><a href="https://www.innovationnewsnetwork.com/black-in-ai-researchers/1000/" 
-							target="_blank">"Black in AI- researchers can't ignore social structure problems" [Magazine article]
+						<dd><a href="https://www.innovationnewsnetwork.com/black-in-ai-researchers/1000/"
+							target="_blank" rel="noopener noreferrer">"Black in AI- researchers can't ignore social structure problems" [Magazine article]
 						</a></dd>
 						
-						<dd><a href="https://ncwit.org/resource/bythenumbers/%27" 
-							target="_blank">"Women and Information Technology: By the Numbers" [Infographic]
+						<dd><a href="https://ncwit.org/resource/bythenumbers/%27"
+							target="_blank" rel="noopener noreferrer">"Women and Information Technology: By the Numbers" [Infographic]
 						</a></dd>
 						
-						<dd><a href="https://news.yale.edu/2017/02/10/grace-murray-hopper-1906-1992-legacy-innovation-and-service" 
-							target="_blank">"Grace Murray Hopper (1906-1992): A legacy of innovation and service" [Yale news story]
+						<dd><a href="https://news.yale.edu/2017/02/10/grace-murray-hopper-1906-1992-legacy-innovation-and-service"
+							target="_blank" rel="noopener noreferrer">"Grace Murray Hopper (1906-1992): A legacy of innovation and service" [Yale news story]
 						</a></dd>
 						
-						<dd><a href="https://arunis100.medium.com/inclusive-cs-examples-b5f40e003815" 
-							target="_blank">"Inclusive CS Examples" [UCSD Professor blog post]
+						<dd><a href="https://arunis100.medium.com/inclusive-cs-examples-b5f40e003815"
+							target="_blank" rel="noopener noreferrer">"Inclusive CS Examples" [UCSD Professor blog post]
 						</a></dd>
-						<dd><a href="https://hci.stanford.edu/courses/cs278/2019/slides/10-antisocial-computing.pdf" 
-							target="_blank">"Introduction to: Anti-social computing" [Intro notes to Stanford course]
+						<dd><a href="https://hci.stanford.edu/courses/cs278/2019/slides/10-antisocial-computing.pdf"
+							target="_blank" rel="noopener noreferrer">"Introduction to: Anti-social computing" [Intro notes to Stanford course]
 						</a></dd>
 					</dl>
 				</topics>
@@ -509,8 +510,8 @@
 		<!--Student handbook-->
 		<div class="row no-gutters justify-content-around">
 				<a name="handbook"></a>
-				<banner><p>PACE Handbook</p></banner>
-				<info class="col-lg-10">
+				<h2 class="section-title">PACE Handbook</h2>
+				<info>
 					<p>
 						What classes should I take? How do I get involved with student organizations?
 						How can I get started with personal projects or research or tutoring?  
@@ -526,9 +527,9 @@
 		</div>
 			
 		<!--Link to external site-->
-		<div class="row no-gutters justify-content-around">
-			<banner><p>Disseminating PACE</p></banner>
-			<info class="col-lg-10">
+		<div class="row no-gutters">
+			<h2 class="section-title">Disseminating PACE</h2>
+			<info>
 				<p>Thinking of launching a program like CSE-PACE at your institution? <a href="external/index.html">Learn more and download resources and toolkits</a> .
 				</p>
 			</info>
@@ -538,8 +539,8 @@
 		<footer class="footer">
 				
 		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">
-			© Copyright 2022-2025 CSE-PACE Program | UC San Diego <br>
+		<div class="footer-copyright text-left py-3">
+			© Copyright 2022-2026 CSE-PACE Program | UC San Diego <br>
 			This material is based upon work supported by the National Science Foundation under Grant CNS-2137928. <br>
 			Any opinions, findings, and conclusions or recommendations expressed in this material are 
 			those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
@@ -552,8 +553,10 @@
 		<!-- Script for bootstrap-->
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>	
+		
+		<!-- Script for Instagram embeds-->
+		<script async src="https://www.instagram.com/embed.js"></script>
 	</body>
 		
 </html>
-		
